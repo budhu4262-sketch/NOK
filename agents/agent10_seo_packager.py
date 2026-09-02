@@ -2,15 +2,13 @@ import os
 import json
 from pathlib import Path
 
-try:
-    from utils.config import get_tabi_api_key
-except ImportError:
-    def get_tabi_api_key():
-        return (
-            os.environ.get("TABI_API_KEY")
-            or os.environ.get("ANTHROPIC_API_KEY")
-            or ""
-        ).strip()
+def get_tabi_key():
+    return (
+        os.environ.get("TABI_API_KEY") or
+        os.environ.get("ANTHROPIC_API_KEY") or
+        os.environ.get("CLAUDE_API_KEY") or
+        ""
+    ).strip()
 
 def run_agent10(topic_dict: dict, transcript_text: str = "", output_dir: Path = None) -> dict:
     if output_dir is None:
@@ -19,7 +17,6 @@ def run_agent10(topic_dict: dict, transcript_text: str = "", output_dir: Path = 
     out_file = output_dir / "10_metadata.json"
 
     topic_title = topic_dict.get("title", topic_dict.get("topic", "Data Shift"))
-    api_key = get_tabi_api_key()
 
     metadata = {
         "title": f"{topic_title} - The Untold Story",
