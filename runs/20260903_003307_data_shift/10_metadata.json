@@ -1,0 +1,27 @@
+{
+  "titles": [
+    "0.72 Sounds Small. It Turns 100 Grandparents Into 4 Great-Grandkids",
+    "South Korea Didn't Just Age \u2014 It Broke Population Math (51.8M \u2192 36M)",
+    "You Think This Is a Korea Problem. Every Country on This Chart Is Behind It"
+  ],
+  "primary_title": "0.72 Sounds Small. It Turns 100 Grandparents Into 4 Great-Grandkids",
+  "description": "South Korea's fertility rate is 0.72, and that one decimal turns 100 grandparents into fewer than 5 great-grandchildren in three generations \u2014 a 95% contraction with no war, no famine, no plague. Below replacement, demography stops behaving like a slow decline and starts behaving like reverse compound interest, and Korea is simply the first country to arrive.\n\nWe run the arithmetic on screen, invert Korea's population pyramid in real time, and then pull back to the chart that matters: Japan, Italy, Spain, China, and the US running the identical descent, 15 to 40 years behind the same line.\n\nCHAPTERS\n00:00 \u2014 Introduction & The Intuition Trap\n01:24 \u2014 The Historical Inflection Point\n03:05 \u2014 The Data Divergence\n04:46 \u2014 The 2030 Horizon & Conclusion\n\nKEY DATA TAKEAWAYS\n\u2022 South Korea's total fertility rate fell from 4.53 (1970) to 0.72 (2023), with a slight rebound to roughly 0.75 in 2024 \u2014 against a replacement rate of 2.1. Seoul sits near 0.55. In 2018 Korea became the first nation in peacetime history to fall below 1.0.\n\u2022 Statistics Korea's medium-variant projection takes the population from its 51.8M peak to roughly 36M by 2072, cuts the working-age cohort close to half, and pushes median age from about 45 into the low 60s \u2014 with the worker-to-retiree ratio sliding from roughly 5:1 toward 1:1.\n\u2022 Korea is the front of the curve, not an outlier: Japan crossed 1.3 in 2005, Italy hit a record-low ~1.18 in 2024, China fell to roughly 1.0\u20131.1 as annual births halved from 18.8M (2016) to about 9.5M (2024), and the US recorded a record-low ~1.6.\n\nSOURCES\n\u2022 Statistics Korea (KOSIS) \u2014 Birth Statistics 2023/2024 and Population Projections for Korea, 2022\u20132072\n\u2022 UN World Population Prospects, 2024 Revision\n\u2022 World Bank \u2014 Fertility rate, total (births per woman)\n\u2022 Japan Ministry of Health, Labour and Welfare \u2014 Vital Statistics\n\u2022 Istat (Italy) \u2014 Natality and fertility indicators, 2024\n\u2022 National Bureau of Statistics of China \u2014 annual births and population data\n\u2022 US CDC / NCHS \u2014 Births: Provisional Data, 2023/2024\n\nMETHODOLOGY NOTE\nThe 100-person model uses a generational multiplier of TFR \u00f7 2 (0.72 \u00f7 2 = 0.36 per person, i.e. 100 grandparents \u2192 36 \u2192 13 \u2192 4.7). It is a deliberately simplified illustration of cohort arithmetic: it holds fertility constant, and excludes mortality, net migration, the ~1.05 male-to-female birth ratio, and changes in generational timing. Real projections, including Statistics Korea's, model all of these and are shown separately wherever a projected figure appears. Generation length is treated as roughly 30 years for the 2025 / 2055 / 2085 / 2115 timeline. Figures for 2024 are provisional and subject to revision.\n\nIf you like data explained honestly \u2014 no blame, no agenda, just the numbers followed to their conclusion \u2014 subscribe. One deep-dive on global statistics and data visualization every week.\n\nWhat do you think is actually driving this \u2014 housing costs, working hours, gender politics, or something the charts can't measure? Comment below.",
+  "tags": [
+    "south korea birth rate",
+    "south korea fertility rate 0.72",
+    "population collapse",
+    "demographic collapse explained",
+    "fertility rate below replacement",
+    "south korea population 2072",
+    "100 grandparents 4 great grandchildren",
+    "replacement rate 2.1 explained",
+    "inverted population pyramid",
+    "japan population decline",
+    "china birth rate collapse 2024",
+    "italy record low fertility rate",
+    "worker to retiree ratio",
+    "statistics korea population projection",
+    "global fertility decline data"
+  ],
+  "category_id": "28"
+}

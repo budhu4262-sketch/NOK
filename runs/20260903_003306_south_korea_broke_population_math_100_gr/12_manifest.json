@@ -1,0 +1,86 @@
+{
+  "timestamp": "20260903_003306",
+  "topic_slug": "south_korea_broke_population_math_100_gr",
+  "archive_directory": "C:\\Users\\dell\\.gemini\\antigravity\\scratch\\youtube_pipeline\\runs\\20260903_003306_south_korea_broke_population_math_100_gr",
+  "total_artifacts": 11,
+  "artifacts": {
+    "topic": {
+      "filename": "01_topic.json",
+      "size_bytes": 17396,
+      "size_mb": 0.02,
+      "sha256": "dd4f3f43087592f30c14fe8a5a0ddbaff392522eb8822b00440405efb5add059",
+      "status": "VALID"
+    },
+    "source": {
+      "filename": "02_source.txt",
+      "size_bytes": 12605,
+      "size_mb": 0.01,
+      "sha256": "de6af0afe75f7ec4a682ac0a75f2c31b764bcb486ee9e513f1fc7dda4d1a247f",
+      "status": "VALID"
+    },
+    "verified_source": {
+      "filename": "03_verified_source.txt",
+      "size_bytes": 12605,
+      "size_mb": 0.01,
+      "sha256": "de6af0afe75f7ec4a682ac0a75f2c31b764bcb486ee9e513f1fc7dda4d1a247f",
+      "status": "VALID"
+    },
+    "notebook_prompts": {
+      "filename": "04_notebook_prompts.json",
+      "size_bytes": 1198,
+      "size_mb": 0.0,
+      "sha256": "98340993b8306502e5223e4195fd73993a88b7d2d69c1fa7fc2f2d71a7e39b0d",
+      "status": "VALID"
+    },
+    "raw_video": {
+      "filename": "06_raw_video.mp4",
+      "size_bytes": 93420096,
+      "size_mb": 89.09,
+      "sha256": "c96a13cc39ca9b408115d7c1c66351bb850f4785310dcc6f6a5ea82bb093935d",
+      "status": "VALID"
+    },
+    "transcript": {
+      "filename": "07_transcript.json",
+      "size_bytes": 221296,
+      "size_mb": 0.21,
+      "sha256": "b7a6cc9059ee74647458c79aa81026d5b66ad3c22b647559abee5fe78924f138",
+      "status": "VALID"
+    },
+    "outro": {
+      "filename": "07_outro.json",
+      "size_bytes": 405,
+      "size_mb": 0.0,
+      "sha256": "a8e3f70370939fdac789820b7817d4888a5c259d8e37df52addeb7b950ca9b3f",
+      "status": "VALID"
+    },
+    "voiced_video": {
+      "filename": "08_voiced_video.mp4",
+      "size_bytes": 97708700,
+      "size_mb": 93.18,
+      "sha256": "b8d8f281bf61511db0f81c45cf646f2aaff3d2eb01df1542623b0f53bfd5d0d5",
+      "status": "VALID"
+    },
+    "final_video": {
+      "filename": "09_final_video.mp4",
+      "size_bytes": 116883618,
+      "size_mb": 111.47,
+      "sha256": "2747c8cc9258c9118b88983f15bc3b2d6468b2ce2ebf585a6c121a0cca9cfe0e",
+      "status": "VALID"
+    },
+    "metadata": {
+      "filename": "10_metadata.json",
+      "size_bytes": 4192,
+      "size_mb": 0.0,
+      "sha256": "d70b28d4ab1b5165c3376edfbe17cac1ca486ecfa36642d59cd3e71d8b562e84",
+      "status": "VALID"
+    },
+    "thumbnail": {
+      "filename": "11_thumbnail.png",
+      "size_bytes": 45806,
+      "size_mb": 0.04,
+      "sha256": "5b6d6fc91f239e9316fb555d916f23f556400cef7b16a59a634eae38e1be8ec8",
+      "status": "VALID"
+    }
+  },
+  "ready_for_publishing": true
+}

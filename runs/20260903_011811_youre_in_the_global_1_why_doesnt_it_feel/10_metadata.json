@@ -1,0 +1,27 @@
+{
+  "titles": [
+    "You're in the Global 1%. Why Doesn't It Feel Like It?",
+    "The World Got More Equal. You Got Poorer. One Chart Explains Both.",
+    "Extreme Poverty Fell 38% to 9%. The Group That Gained Nothing Was You."
+  ],
+  "primary_title": "You're in the Global 1%. Why Doesn't It Feel Like It?",
+  "description": "Global inequality has been falling for the first time since the Industrial Revolution \u2014 and yet the average person in a rich country feels poorer than their parents. Both of those facts are true, and both are visible on the same chart.\n\nFor two centuries, global inequality was mostly a story about which country you were born in. After 1990, China and India converged, extreme poverty collapsed from roughly 38% of humanity to under 10%, and the world income distribution stopped being two separate humps and fused into one. But at the exact same time, inequality inside countries rose almost everywhere \u2014 and the slice of humanity with the flattest real income gains between 1988 and 2008 wasn't the global poor. It was the 80th to 90th global percentile: the Western working and lower-middle class. That flat stretch is the trunk of the elephant curve, and it is the statistical fingerprint of why the greatest poverty reduction in history feels like decline from the inside.\n\n\u23f1\ufe0f CHAPTERS\n00:00 \u2014 Introduction & The Intuition Trap\n00:02 \u2014 The Historical Inflection Point\n00:05 \u2014 The Data Divergence\n00:09 \u2014 The 2030 Horizon & Conclusion\n\n\ud83d\udcca KEY TAKEAWAYS\n\u2022 Extreme poverty fell from roughly 38% of the world's population in 1990 to under 10% today, and the global interpersonal Gini fell from about 0.70 to the low 0.60s \u2014 the first sustained decline since the Industrial Revolution.\n\u2022 The world income distribution was bimodal in 1975 (a poor-world hump and a rich-world hump). By roughly 2015, those two humps had merged into a single global hump \u2014 the \"developed vs. developing\" split stopped being a shape you can see in the data.\n\u2022 Between-country inequality shrank while within-country inequality rose almost everywhere: the US top 1% wealth share moved from roughly 24% in 1989 to around 31% today, and the flattest real income growth over 1988\u20132008 landed on the 80th\u201390th global percentile \u2014 the audience most likely to be watching this video.\n\n\ud83d\udcda SOURCES & METHODOLOGY\n\u2022 World Bank \u2014 PovcalNet / Poverty and Inequality Platform (extreme poverty headcount, $2.15/day 2017 PPP)\n\u2022 Branko Milanovi\u0107 \u2014 \"Global Inequality\" and the 1988\u20132008 global growth incidence curve (the elephant curve)\n\u2022 Lakner & Milanovi\u0107 \u2014 Global Income Distribution from the Fall of the Berlin Wall to the Great Recession\n\u2022 World Inequality Database (WID.world) \u2014 national top 1% income and wealth shares\n\u2022 Our World in Data \u2014 global income distribution and poverty series\n\u2022 Maddison Project Database \u2014 long-run historical GDP per capita\n\nMethodology note: All incomes are expressed per person per day in constant purchasing-power-parity (PPP) terms and plotted on a logarithmic axis, because income is distributed multiplicatively rather than additively. Global Gini estimates vary by source depending on whether they use household surveys, national accounts, or a blend, and on how top incomes are corrected \u2014 figures here reflect central estimates, not point precision. Pre-1980 distributions are reconstructions built from limited survey coverage and should be read as shape, not as decimals. The elephant curve is an anonymous growth incidence curve: it tracks percentile positions over time, not the same individuals, so the trunk describes a location in the distribution rather than a fixed group of people.\n\nIf you like data that overturns your own conclusion twice before the end, subscribe \u2014 new intellectual data documentaries every week.\n\n\ud83d\udcac One question for the comments: is a world that is more equal between countries but less equal inside them a better world? Argue it out below.",
+  "tags": [
+    "global inequality",
+    "elephant curve",
+    "income inequality explained",
+    "global income distribution",
+    "extreme poverty statistics",
+    "branko milanovic elephant curve",
+    "global gini coefficient decline",
+    "within country vs between country inequality",
+    "am i in the global 1 percent",
+    "world income distribution two humps to one",
+    "data visualization documentary",
+    "economics explained",
+    "wealth inequality united states top 1 percent",
+    "china india convergence global poverty",
+    "data is beautiful"
+  ],
+  "category_id": "28"
+}

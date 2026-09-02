@@ -1,0 +1,10 @@
+{
+  "status": "SIMULATED_SUCCESS",
+  "video_id": "SIMULATED_VID_22353600",
+  "url": "https://youtu.be/SIMULATED_VID_22353600",
+  "title": "0.72 Sounds Small. It Turns 100 Grandparents Into 4 Great-Grandkids",
+  "category_id": "28",
+  "privacy_status": "private",
+  "thumbnail": "C:\\Users\\dell\\.gemini\\antigravity\\scratch\\youtube_pipeline\\workspace\\11_thumbnail.png",
+  "note": "Run 'python auth_youtube.py' to enable live headless uploads."
+}

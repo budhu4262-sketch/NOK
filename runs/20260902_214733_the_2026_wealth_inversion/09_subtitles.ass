@@ -1,0 +1,31 @@
+[Script Info]
+Title: Dynamic Data Viz Word-Highlight Subtitles
+ScriptType: v4.00+
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+YCbCr Matrix: None
+PlayResX: 1920
+PlayResY: 1080
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Impact,52,&H00FFFFFF,&H002EFFFF,&H00000000,&H64000000,1,0,0,0,100,100,0,0,1,5.0,3.0,2,20,20,100,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:00.40,Default,,0,0,0,,{\c&H002EFFFF}THIS{\c&H00FFFFFF} IS THE CINEMATIC
+Dialogue: 0,0:00:00.45,0:00:00.85,Default,,0,0,0,,THIS {\c&H002EFFFF}IS{\c&H00FFFFFF} THE CINEMATIC
+Dialogue: 0,0:00:00.90,0:00:01.30,Default,,0,0,0,,THIS IS {\c&H002EFFFF}THE{\c&H00FFFFFF} CINEMATIC
+Dialogue: 0,0:00:01.35,0:00:01.75,Default,,0,0,0,,THIS IS THE {\c&H002EFFFF}CINEMATIC{\c&H00FFFFFF}
+Dialogue: 0,0:00:01.80,0:00:02.20,Default,,0,0,0,,{\c&H002EFFFF}DATA{\c&H00FFFFFF} OVERVIEW OF GLOBAL
+Dialogue: 0,0:00:02.25,0:00:02.65,Default,,0,0,0,,DATA {\c&H002EFFFF}OVERVIEW{\c&H00FFFFFF} OF GLOBAL
+Dialogue: 0,0:00:02.70,0:00:03.10,Default,,0,0,0,,DATA OVERVIEW {\c&H002EFFFF}OF{\c&H00FFFFFF} GLOBAL
+Dialogue: 0,0:00:03.15,0:00:03.55,Default,,0,0,0,,DATA OVERVIEW OF {\c&H002EFFFF}GLOBAL{\c&H00FFFFFF}
+Dialogue: 0,0:00:03.60,0:00:04.00,Default,,0,0,0,,{\c&H002EFFFF}STATISTICAL{\c&H00FFFFFF} REALITY. THE NUMBERS
+Dialogue: 0,0:00:04.05,0:00:04.45,Default,,0,0,0,,STATISTICAL {\c&H002EFFFF}REALITY.{\c&H00FFFFFF} THE NUMBERS
+Dialogue: 0,0:00:04.50,0:00:04.90,Default,,0,0,0,,STATISTICAL REALITY. {\c&H002EFFFF}THE{\c&H00FFFFFF} NUMBERS
+Dialogue: 0,0:00:04.95,0:00:05.35,Default,,0,0,0,,STATISTICAL REALITY. THE {\c&H002EFFFF}NUMBERS{\c&H00FFFFFF}
+Dialogue: 0,0:00:05.40,0:00:05.80,Default,,0,0,0,,{\c&H002EFFFF}REVEAL{\c&H00FFFFFF} AN EXTRAORDINARY DIVERGENCE.
+Dialogue: 0,0:00:05.85,0:00:06.25,Default,,0,0,0,,REVEAL {\c&H002EFFFF}AN{\c&H00FFFFFF} EXTRAORDINARY DIVERGENCE.
+Dialogue: 0,0:00:06.30,0:00:06.70,Default,,0,0,0,,REVEAL AN {\c&H002EFFFF}EXTRAORDINARY{\c&H00FFFFFF} DIVERGENCE.
+Dialogue: 0,0:00:06.75,0:00:07.15,Default,,0,0,0,,REVEAL AN EXTRAORDINARY {\c&H002EFFFF}DIVERGENCE.{\c&H00FFFFFF}

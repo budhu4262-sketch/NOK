@@ -1,0 +1,10 @@
+{
+  "status": "SIMULATED_SUCCESS",
+  "video_id": "SIMULATED_VID_11228187",
+  "url": "https://youtu.be/SIMULATED_VID_11228187",
+  "title": "You're in the Global 1%. Why Doesn't It Feel Like It?",
+  "category_id": "28",
+  "privacy_status": "private",
+  "thumbnail": "C:\\Users\\dell\\.gemini\\antigravity\\scratch\\youtube_pipeline\\workspace\\11_thumbnail.png",
+  "note": "Run 'python auth_youtube.py' to enable live headless uploads."
+}

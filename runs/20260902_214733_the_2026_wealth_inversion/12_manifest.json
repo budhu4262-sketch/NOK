@@ -1,0 +1,86 @@
+{
+  "timestamp": "20260902_214733",
+  "topic_slug": "the_2026_wealth_inversion",
+  "archive_directory": "C:\\Users\\dell\\.gemini\\antigravity\\scratch\\youtube_pipeline\\runs\\20260902_214733_the_2026_wealth_inversion",
+  "total_artifacts": 11,
+  "artifacts": {
+    "topic": {
+      "filename": "01_topic.json",
+      "size_bytes": 1023,
+      "size_mb": 0.0,
+      "sha256": "fb7264ce138aacd6507dbcaa10a8752d25dc320ebbad061ca937a774cd4ceb4e",
+      "status": "VALID"
+    },
+    "source": {
+      "filename": "02_source.txt",
+      "size_bytes": 1262,
+      "size_mb": 0.0,
+      "sha256": "93403b1c22fa015b4e063f1dcb22c6a2e3aba1d2da512ad525967b0349364e01",
+      "status": "VALID"
+    },
+    "verified_source": {
+      "filename": "03_verified_source.txt",
+      "size_bytes": 52,
+      "size_mb": 0.0,
+      "sha256": "d345bdc25721c15ca2aadb72dae6a48b973765613d97609bceff3e095223fb4e",
+      "status": "VALID"
+    },
+    "notebook_prompts": {
+      "filename": "04_notebook_prompts.json",
+      "size_bytes": 752,
+      "size_mb": 0.0,
+      "sha256": "012ff123bb8d1df31ab228e3ff7b16fc2f963dc0fd6a8d126965ee15d45ac130",
+      "status": "VALID"
+    },
+    "raw_video": {
+      "filename": "06_raw_video.mp4",
+      "size_bytes": 59060,
+      "size_mb": 0.06,
+      "sha256": "54c2670f410fcdaaadc109a73ffddf26809bd4a33159254074794a230c3f0400",
+      "status": "VALID"
+    },
+    "transcript": {
+      "filename": "07_transcript.json",
+      "size_bytes": 4295,
+      "size_mb": 0.0,
+      "sha256": "f1eb749613f374b87355ce3514e5a0e48b98ba35a26f11b130a3a4ea51a215d6",
+      "status": "VALID"
+    },
+    "outro": {
+      "filename": "07_outro.json",
+      "size_bytes": 323,
+      "size_mb": 0.0,
+      "sha256": "d421e2e011d6f41ee215196c9fc175daa003f515abb4a23dae75bc27ab6b15c6",
+      "status": "VALID"
+    },
+    "voiced_video": {
+      "filename": "08_voiced_video.mp4",
+      "size_bytes": 136753,
+      "size_mb": 0.13,
+      "sha256": "a162acadecc6a326f6cc49834e3b135feb7a7c1ea648d23e1874353e9ca9e29d",
+      "status": "VALID"
+    },
+    "final_video": {
+      "filename": "09_final_video.mp4",
+      "size_bytes": 181152,
+      "size_mb": 0.17,
+      "sha256": "f2d8c2a1fa5032d880e90f964ceda30a1ce926a233273ab8f364f9bb49cf4d09",
+      "status": "VALID"
+    },
+    "metadata": {
+      "filename": "10_metadata.json",
+      "size_bytes": 1036,
+      "size_mb": 0.0,
+      "sha256": "86637ed5cc94d39eb4640bd24878b167ad435032c0d5c239aa15f5b5ae2b183f",
+      "status": "VALID"
+    },
+    "thumbnail": {
+      "filename": "11_thumbnail.png",
+      "size_bytes": 62310,
+      "size_mb": 0.06,
+      "sha256": "8e618caf621250ec1b2e2389a3ccecb0cd78550c7d79ea151ea86cd38bcc3e3b",
+      "status": "VALID"
+    }
+  },
+  "ready_for_publishing": true
+}

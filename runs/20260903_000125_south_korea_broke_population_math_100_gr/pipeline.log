@@ -1,0 +1,1513 @@
+2026-09-02 21:48:00,089 [INFO] orchestrator - ======================================================================
+2026-09-02 21:48:00,091 [INFO] orchestrator - STARTING 13-AGENT PIPELINE (Stages 1 -> 13) | Dry-run: True
+2026-09-02 21:48:00,091 [INFO] orchestrator - ======================================================================
+2026-09-02 21:48:00,091 [INFO] orchestrator - 
+>>> EXECUTING STAGE 1: Trend Scout
+2026-09-02 21:48:00,092 [INFO] agent1_trend_scout - Agent 1 starting: Scouting viral concepts for niche: Data Visualization & Global Statistics
+2026-09-02 21:48:00,093 [WARNING] tabi_client - TABI_API_KEY is not set. Generating synthetic response for testing/dry-run mode.
+2026-09-02 21:48:00,096 [INFO] agent1_trend_scout - Agent 1 completed: Selected topic 'The 2026 Wealth Inversion' -> C:\Users\dell\.gemini\antigravity\scratch\youtube_pipeline\workspace\01_topic.json
+2026-09-02 21:48:00,097 [INFO] orchestrator - <<< STAGE 1 (Trend Scout) COMPLETED SUCCESSFULLY.
+2026-09-02 21:48:00,098 [INFO] orchestrator - 
+>>> EXECUTING STAGE 2: Source Writer
+2026-09-02 21:48:00,098 [INFO] agent2_source_writer - Agent 2 starting: Reading topic from C:\Users\dell\.gemini\antigravity\scratch\youtube_pipeline\workspace\01_topic.json
+2026-09-02 21:48:00,100 [WARNING] tabi_client - TABI_API_KEY is not set. Generating synthetic response for testing/dry-run mode.
+2026-09-02 21:48:00,103 [INFO] agent2_source_writer - Agent 2 completed: Generated 187 words -> C:\Users\dell\.gemini\antigravity\scratch\youtube_pipeline\workspace\02_source.txt
+2026-09-02 21:48:00,104 [INFO] orchestrator - <<< STAGE 2 (Source Writer) COMPLETED SUCCESSFULLY.
+2026-09-02 21:48:00,104 [INFO] orchestrator - 
+>>> EXECUTING STAGE 3: Fact & Ingestion Verifier
+2026-09-02 21:48:00,104 [INFO] agent3_fact_verifier - Agent 3 starting: Verifying source text from C:\Users\dell\.gemini\antigravity\scratch\youtube_pipeline\workspace\02_source.txt
+2026-09-02 21:48:00,105 [WARNING] tabi_client - TABI_API_KEY is not set. Generating synthetic response for testing/dry-run mode.
+2026-09-02 21:48:00,107 [INFO] agent3_fact_verifier - Agent 3 completed: Verified source saved -> C:\Users\dell\.gemini\antigravity\scratch\youtube_pipeline\workspace\03_verified_source.txt
+2026-09-02 21:48:00,108 [INFO] orchestrator - <<< STAGE 3 (Fact & Ingestion Verifier) COMPLETED SUCCESSFULLY.
+2026-09-02 21:48:00,108 [INFO] orchestrator - 
+>>> EXECUTING STAGE 4: Prompt Synthesizer
+2026-09-02 21:48:00,108 [INFO] agent4_prompt_synthesizer - Agent 4 starting: Reading verified source from C:\Users\dell\.gemini\antigravity\scratch\youtube_pipeline\workspace\03_verified_source.txt
+2026-09-02 21:48:00,109 [WARNING] tabi_client - TABI_API_KEY is not set. Generating synthetic response for testing/dry-run mode.
+2026-09-02 21:48:00,113 [INFO] agent4_prompt_synthesizer - Agent 4 completed: Prompts synthesized -> C:\Users\dell\.gemini\antigravity\scratch\youtube_pipeline\workspace\04_notebook_prompts.json
+2026-09-02 21:48:00,113 [INFO] orchestrator - <<< STAGE 4 (Prompt Synthesizer) COMPLETED SUCCESSFULLY.
+2026-09-02 21:48:00,113 [INFO] orchestrator - 
+>>> EXECUTING STAGE 5: NotebookLM Feeder
+2026-09-02 21:48:00,113 [INFO] agent5_notebook_feeder - Agent 5 starting: Ingesting source & prompts into NotebookLM
+2026-09-02 21:48:00,114 [INFO] agent5_notebook_feeder - [DRY-RUN] Simulating NotebookLM ingestion...
+2026-09-02 21:48:00,115 [INFO] orchestrator - <<< STAGE 5 (NotebookLM Feeder) COMPLETED SUCCESSFULLY.
+2026-09-02 21:48:00,115 [INFO] orchestrator - 
+>>> EXECUTING STAGE 6: Asset Harvester
+2026-09-02 21:48:00,115 [INFO] agent6_asset_harvester - Agent 6 starting: Asset Harvester (Initial wait: 1200s, Poll interval: 120s, Timeout: 4500s)
+2026-09-02 21:48:00,115 [INFO] agent6_asset_harvester - [DRY-RUN] Creating synthetic raw video asset for pipeline testing...
+2026-09-02 21:48:03,062 [INFO] agent6_asset_harvester - [DRY-RUN] Synthetic video created: C:\Users\dell\.gemini\antigravity\scratch\youtube_pipeline\workspace\06_raw_video.mp4
+2026-09-02 21:48:03,062 [INFO] orchestrator - <<< STAGE 6 (Asset Harvester) COMPLETED SUCCESSFULLY.
+2026-09-02 21:48:03,063 [INFO] orchestrator - 
+>>> EXECUTING STAGE 7: Transcriber & Outro Synthesizer
+2026-09-02 21:48:03,063 [INFO] agent7_transcriber_outro - Agent 7 starting: Transcribing C:\Users\dell\.gemini\antigravity\scratch\youtube_pipeline\workspace\06_raw_video.mp4
+2026-09-02 21:48:03,064 [INFO] agent7_transcriber_outro - Extracting audio: 06_raw_video.mp4 -> temp_extracted.wav
+2026-09-02 21:48:03,316 [WARNING] agent7_transcriber_outro - faster-whisper transcription unavailable or failed (No module named 'faster_whisper'). Using fallback audio analysis.
+2026-09-02 21:48:03,317 [INFO] agent7_transcriber_outro - Generating fallback transcript structure...
+2026-09-02 21:48:03,322 [INFO] agent7_transcriber_outro - Transcript saved -> C:\Users\dell\.gemini\antigravity\scratch\youtube_pipeline\workspace\07_transcript.json
+2026-09-02 21:48:03,323 [WARNING] tabi_client - TABI_API_KEY is not set. Generating synthetic response for testing/dry-run mode.
+2026-09-02 21:48:03,328 [INFO] agent7_transcriber_outro - Outro script synthesized -> C:\Users\dell\.gemini\antigravity\scratch\youtube_pipeline\workspace\07_outro.json
+2026-09-02 21:48:03,330 [INFO] orchestrator - <<< STAGE 7 (Transcriber & Outro Synthesizer) COMPLETED SUCCESSFULLY.
+2026-09-02 21:48:03,331 [INFO] orchestrator - 
+>>> EXECUTING STAGE 8: Voice Transformer & Splicer
+2026-09-02 21:48:03,331 [INFO] agent8_voice_transformer - Agent 8 starting: Voice Transformer & Splicer
+2026-09-02 21:48:03,332 [INFO] agent8_voice_transformer - Extracting audio from 06_raw_video.mp4 -> 08_raw_audio.wav
+2026-09-02 21:48:03,552 [INFO] agent8_voice_transformer - Seed-VC / RVC CLI not specified in .env. Applying broadcast studio EQ & voice enhancement fallback.
+2026-09-02 21:48:03,949 [INFO] agent8_voice_transformer - Synthesizing outro audio using Edge-TTS voice 'en-US-ChristopherNeural'...
+2026-09-02 21:48:04,022 [WARNING] agent8_voice_transformer - edge-tts synthesis failed ([WinError 2] The system cannot find the file specified). Generating tone outro fallback.
+2026-09-02 21:48:04,504 [INFO] agent8_voice_transformer - Muxing voiced video -> C:\Users\dell\.gemini\antigravity\scratch\youtube_pipeline\workspace\08_voiced_video.mp4
+2026-09-02 21:48:05,059 [INFO] agent8_voice_transformer - Agent 8 completed: Voiced video created -> C:\Users\dell\.gemini\antigravity\scratch\youtube_pipeline\workspace\08_voiced_video.mp4
+2026-09-02 21:48:05,060 [INFO] orchestrator - <<< STAGE 8 (Voice Transformer & Splicer) COMPLETED SUCCESSFULLY.
+2026-09-02 21:48:05,060 [INFO] orchestrator - 
+>>> EXECUTING STAGE 9: Subtitle & Dynamic Editor
+2026-09-02 21:48:05,060 [INFO] agent9_subtitle_editor - Agent 9 starting: Subtitle & Dynamic Editor
+2026-09-02 21:48:05,064 [INFO] agent9_subtitle_editor - ASS Subtitles generated -> C:\Users\dell\.gemini\antigravity\scratch\youtube_pipeline\workspace\09_subtitles.ass
+2026-09-02 21:48:05,065 [INFO] agent9_subtitle_editor - Burning subtitles via FFmpeg libass into final video...
+2026-09-02 21:48:07,795 [INFO] agent9_subtitle_editor - Agent 9 completed: Final video ready (0.17 MB) -> C:\Users\dell\.gemini\antigravity\scratch\youtube_pipeline\workspace\09_final_video.mp4
+2026-09-02 21:48:07,796 [INFO] orchestrator - <<< STAGE 9 (Subtitle & Dynamic Editor) COMPLETED SUCCESSFULLY.
+2026-09-02 21:48:07,796 [INFO] orchestrator - 
+>>> EXECUTING STAGE 10: SEO & Packaging Packager
+2026-09-02 21:48:07,797 [INFO] agent10_seo_packager - Agent 10 starting: Generating SEO metadata
+2026-09-02 21:48:07,800 [WARNING] tabi_client - TABI_API_KEY is not set. Generating synthetic response for testing/dry-run mode.
+2026-09-02 21:48:07,807 [INFO] agent10_seo_packager - Agent 10 completed: Metadata saved -> C:\Users\dell\.gemini\antigravity\scratch\youtube_pipeline\workspace\10_metadata.json
+2026-09-02 21:48:07,807 [INFO] orchestrator - <<< STAGE 10 (SEO & Packaging Packager) COMPLETED SUCCESSFULLY.
+2026-09-02 21:48:07,807 [INFO] orchestrator - 
+>>> EXECUTING STAGE 11: Thumbnail Engine
+2026-09-02 21:48:07,808 [INFO] agent11_thumbnail_generator - Agent 11 starting: Generating high-CTR thumbnail asset
+2026-09-02 21:48:08,562 [INFO] agent11_thumbnail_generator - Agent 11 completed: Thumbnail generated -> C:\Users\dell\.gemini\antigravity\scratch\youtube_pipeline\workspace\11_thumbnail.png
+2026-09-02 21:48:08,564 [INFO] orchestrator - <<< STAGE 11 (Thumbnail Engine) COMPLETED SUCCESSFULLY.
+2026-09-02 21:48:08,564 [INFO] orchestrator - 
+>>> EXECUTING STAGE 12: Production Asset Bundler
+2026-09-02 21:48:08,564 [INFO] agent12_asset_bundler - Agent 12 starting: Bundling run assets
+2026-09-02 21:48:08,580 [INFO] agent12_asset_bundler - Archiving assets to C:\Users\dell\.gemini\antigravity\scratch\youtube_pipeline\runs\20260902_214808_the_2026_wealth_inversion...
+2026-09-02 21:48:08,830 [INFO] agent12_asset_bundler - Agent 12 completed: Manifest created -> C:\Users\dell\.gemini\antigravity\scratch\youtube_pipeline\workspace\12_manifest.json, Archived to -> C:\Users\dell\.gemini\antigravity\scratch\youtube_pipeline\runs\20260902_214808_the_2026_wealth_inversion
+2026-09-02 21:48:08,831 [INFO] orchestrator - <<< STAGE 12 (Production Asset Bundler) COMPLETED SUCCESSFULLY.
+2026-09-02 21:48:08,831 [INFO] orchestrator - 
+>>> EXECUTING STAGE 13: YouTube Publisher
+2026-09-02 21:48:08,831 [INFO] agent13_youtube_publisher - Agent 13 starting: YouTube Publishing & Scheduling
+2026-09-02 21:48:08,833 [WARNING] agent13_youtube_publisher - YouTube client_secrets.json not found at C:\Users\dell\.gemini\antigravity\scratch\youtube_pipeline\config\client_secrets.json. Running in SIMULATED / DRY-RUN mode.
+2026-09-02 21:48:08,833 [INFO] agent13_youtube_publisher - Agent 13 (Simulated): {
+  "status": "SIMULATED_SUCCESS",
+  "video_id": "SIMULATED_VID_DATA_26586113",
+  "url": "https://youtu.be/SIMULATED_VID_DATA_26586113",
+  "title": "The 2026 Data Collapse Nobody Is Talking About",
+  "category_id": "28",
+  "privacy_status": "private",
+  "thumbnail": "C:\\Users\\dell\\.gemini\\antigravity\\scratch\\youtube_pipeline\\workspace\\11_thumbnail.png",
+  "note": "To publish live to YouTube, place OAuth credentials at C:\\Users\\dell\\.gemini\\antigravity\\scratch\\youtube_pipeline\\config\\client_secrets.json"
+}
+2026-09-02 21:48:08,834 [INFO] orchestrator - <<< STAGE 13 (YouTube Publisher) COMPLETED SUCCESSFULLY.
+2026-09-02 21:48:08,834 [INFO] orchestrator - ======================================================================
+2026-09-02 21:48:08,834 [INFO] orchestrator - PIPELINE RUN COMPLETED SUCCESSFULLY in 0:00:08
+2026-09-02 21:48:08,834 [INFO] orchestrator - ======================================================================
+2026-09-02 22:01:45,511 [INFO] orchestrator - ======================================================================
+2026-09-02 22:01:45,513 [INFO] orchestrator - STARTING 13-AGENT PIPELINE (Stages 1 -> 13) | Dry-run: False
+2026-09-02 22:01:45,514 [INFO] orchestrator - ======================================================================
+2026-09-02 22:01:45,515 [INFO] orchestrator - 
+>>> EXECUTING STAGE 1: Trend Scout
+2026-09-02 22:01:45,516 [INFO] agent1_trend_scout - Agent 1 starting: Scouting viral concepts for niche: Data Visualization & Global Statistics
+2026-09-02 22:01:45,517 [INFO] tabi_client - Calling TabiAI (https://api.tabitoken.com/v1/chat/completions) using model: claude-opus-5
+2026-09-02 22:01:45,609 [ERROR] tabi_client - TabiAI API request failed: HTTPSConnectionPool(host='api.tabitoken.com', port=443): Max retries exceeded with url: /v1/chat/completions (Caused by NameResolutionError("HTTPSConnection(host='api.tabitoken.com', port=443): Failed to resolve 'api.tabitoken.com' ([Errno 11001] getaddrinfo failed)"))
+2026-09-02 22:01:45,610 [ERROR] orchestrator - !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2026-09-02 22:01:45,610 [ERROR] orchestrator - PIPELINE HALTED AT STAGE 1 (Trend Scout): HTTPSConnectionPool(host='api.tabitoken.com', port=443): Max retries exceeded with url: /v1/chat/completions (Caused by NameResolutionError("HTTPSConnection(host='api.tabitoken.com', port=443): Failed to resolve 'api.tabitoken.com' ([Errno 11001] getaddrinfo failed)"))
+2026-09-02 22:01:45,612 [ERROR] orchestrator - TRACEBACK:
+2026-09-02 22:01:45,666 [ERROR] orchestrator - Traceback (most recent call last):
+  File "C:\Users\dell\AppData\Roaming\Python\Python314\site-packages\urllib3\connection.py", line 204, in _new_conn
+    sock = connection.create_connection(
+        (self._dns_host, self.port),
+    ...<2 lines>...
+        socket_options=self.socket_options,
+    )
+  File "C:\Users\dell\AppData\Roaming\Python\Python314\site-packages\urllib3\util\connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+               ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python314\Lib\socket.py", line 983, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\dell\AppData\Roaming\Python\Python314\site-packages\urllib3\connectionpool.py", line 788, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "C:\Users\dell\AppData\Roaming\Python\Python314\site-packages\urllib3\connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "C:\Users\dell\AppData\Roaming\Python\Python314\site-packages\urllib3\connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\dell\AppData\Roaming\Python\Python314\site-packages\urllib3\connectionpool.py", line 1106, in _validate_conn
+    conn.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\dell\AppData\Roaming\Python\Python314\site-packages\urllib3\connection.py", line 759, in connect
+    self.sock = sock = self._new_conn()
+                       ~~~~~~~~~~~~~~^^
+  File "C:\Users\dell\AppData\Roaming\Python\Python314\site-packages\urllib3\connection.py", line 211, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: HTTPSConnection(host='api.tabitoken.com', port=443): Failed to resolve 'api.tabitoken.com' ([Errno 11001] getaddrinfo failed)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\dell\AppData\Roaming\Python\Python314\site-packages\requests\adapters.py", line 696, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "C:\Users\dell\AppData\Roaming\Python\Python314\site-packages\urllib3\connectionpool.py", line 842, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "C:\Users\dell\AppData\Roaming\Python\Python314\site-packages\urllib3\util\retry.py", line 543, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.tabitoken.com', port=443): Max retries exceeded with url: /v1/chat/completions (Caused by NameResolutionError("HTTPSConnection(host='api.tabitoken.com', port=443): Failed to resolve 'api.tabitoken.com' ([Errno 11001] getaddrinfo failed)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\dell\.gemini\antigravity\scratch\youtube_pipeline\orchestrator.py", line 109, in run_pipeline
+    func()
+    ~~~~^^
+  File "C:\Users\dell\.gemini\antigravity\scratch\youtube_pipeline\agents\agent1_trend_scout.py", line 58, in run_agent1
+    result = client.generate_json(user_prompt, system_prompt=system_prompt, temperature=0.7)
+  File "C:\Users\dell\.gemini\antigravity\scratch\youtube_pipeline\utils\tabi_client.py", line 87, in generate_json
+    raw = self.generate(
+        augmented_prompt,
+    ...<2 lines>...
+        max_tokens=max_tokens,
+    )
+  File "C:\Users\dell\.gemini\antigravity\scratch\youtube_pipeline\utils\tabi_client.py", line 63, in generate
+    response = self.session.post(
+        self.endpoint, headers=headers, json=payload, timeout=timeout
+    )
+  File "C:\Users\dell\AppData\Roaming\Python\Python314\site-packages\requests\sessions.py", line 712, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dell\AppData\Roaming\Python\Python314\site-packages\requests\sessions.py", line 651, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\dell\AppData\Roaming\Python\Python314\site-packages\requests\sessions.py", line 784, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\dell\AppData\Roaming\Python\Python314\site-packages\requests\adapters.py", line 729, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.tabitoken.com', port=443): Max retries exceeded with url: /v1/chat/completions (Caused by NameResolutionError("HTTPSConnection(host='api.tabitoken.com', port=443): Failed to resolve 'api.tabitoken.com' ([Errno 11001] getaddrinfo failed)"))
+
+2026-09-02 22:01:45,668 [ERROR] orchestrator - Workspace state preserved in: C:\Users\dell\.gemini\antigravity\scratch\youtube_pipeline\workspace
+2026-09-02 22:01:45,671 [ERROR] orchestrator - You can resume after fixing with: python orchestrator.py --stage 1
+2026-09-02 22:01:45,675 [ERROR] orchestrator - !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2026-09-02 22:04:23,487 [INFO] orchestrator - ======================================================================
+2026-09-02 22:04:23,487 [INFO] orchestrator - STARTING 13-AGENT PIPELINE (Stages 1 -> 13) | Dry-run: False
+2026-09-02 22:04:23,488 [INFO] orchestrator - ======================================================================
+2026-09-02 22:04:23,488 [INFO] orchestrator - 
+>>> EXECUTING STAGE 1: Trend Scout
+2026-09-02 22:04:23,489 [INFO] agent1_trend_scout - Agent 1 starting: Scouting viral concepts for niche: Data Visualization & Global Statistics
+2026-09-02 22:04:23,490 [INFO] tabi_client - Calling TabiAI (https://tabitoken.com/v1/chat/completions) using model: claude-opus-5
+2026-09-02 22:04:24,215 [ERROR] tabi_client - TabiAI API request failed: 403 Client Error: Forbidden for url: https://tabitoken.com/v1/chat/completions
+2026-09-02 22:04:24,216 [ERROR] tabi_client - Server response (403): <!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en-US"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en-US"> <!--<![endif]-->
+<head>
+<title>Attention Required! | Cloudflare</title>
+<meta charset="UTF-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta name="robots" content="noindex, nofollow" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<link rel="stylesheet" id="cf_styles-css" href="/cdn-cgi/styles/cf.errors.css" />
+<!--[if lt IE 9]><link rel="stylesheet" id='cf_styles-ie-css' href="/cdn-cgi/styles/cf.errors.ie.css" /><![endif]-->
+<style>body{margin:0;padding:0}</style>
+
+
+<!--[if gte IE 10]><!-->
+<script>
+  if (!navigator.cookieEnabled) {
+    window.addEventListener('DOMContentLoaded', function () {
+      var cookieEl = document.getElementById('cookie-alert');
+      cookieEl.style.display = 'block';
+    })
+  }
+</script>
+<!--<![endif]-->
+
+</head>
+<body>
+  <div id="cf-wrapper">
+    <div class="cf-alert cf-alert-error cf-cookie-error" id="cookie-alert" data-translate="enable_cookies">Please enable cookies.</div>
+    <div id="cf-error-details" class="cf-error-details-wrapper">
+      <div class="cf-wrapper cf-header cf-error-overview">
+        <h1 data-translate="block_headline">Sorry, you have been blocked</h1>
+        <h2 class="cf-subheadline"><span data-translate="unable_to_access">You are unable to access</span> tabitoken.com</h2>
+      </div><!-- /.header -->
+
+      <div class="cf-section cf-highlight">
+        <div class="cf-wrapper">
+          <div class="cf-screenshot-container cf-screenshot-full">
+            
+              <span class="cf-no-screenshot error"></span>
+            
+          </div>
+        </div>
+      </div><!-- /.captcha-container -->
+
+      <div class="cf-section cf-wrapper">
+        <div class="cf-columns two">
+          <div class="cf-column">
+            <h2 data-translate="blocked_why_headline">Why have I been blocked?</h2>
+
+            <p data-translate="blocked_why_detail">This website is using a security service to protect itself from online attacks. The action you just performed triggered the security solution. There are several actions that could trigger this block including submitting a certain word or phrase, a SQL command or malformed data.</p>
+          </div>
+
+          <div class="cf-column">
+            <h2 data-translate="blocked_resolve_headline">What can I do to resolve this?</h2>
+
+            <p data-translate="blocked_resolve_detail">You can email the site owner to let them know you were blocked. Please include what you were doing when this page came up and the Cloudflare Ray ID found at the bottom of this page.</p>
+          </div>
+        </div>
+      </div><!-- /.section -->
+
+      <div class="cf-error-footer cf-wrapper w-240 lg:w-full py-10 sm:py-4 sm:px-8 mx-auto text-center sm:text-left border-solid border-0 border-t border-gray-300">
+    <p class="text-13">
+      <span class="cf-footer-item sm:block sm:mb-1">Cloudflare Ray ID: <strong class="font-semibold">a34dec063992c149</strong></span>
+      <span class="cf-footer-separator sm:hidden">&bull;</span>
+      <span id="cf-footer-item-ip" class="cf-footer-item hidden sm:block sm:mb-1">
+        Your IP:
+        <button type="button" id="cf-footer-ip-reveal" class="cf-footer-ip-reveal-btn">Click to reveal</button>
+        <span class="hidden" id="cf-footer-ip">146.196.38.44</span>
+        <span class="cf-footer-separator sm:hidden">&bull;</span>
+      </span>
+      <span class="cf-footer-item sm:block sm:mb-1"><span>Performance &amp; security by</span> <a rel="noopener noreferrer" href="https://www.cloudflare.com/5xx-error-landing" id="brand_link" target="_blank">Cloudflare</a></span>
+      
+    </p>
+    <script>(function(){function d(){var b=a.getElementById("cf-footer-item-ip"),c=a.getElementById("cf-footer-ip-reveal");b&&"classList"in b&&(b.classList.remove("hidden"),c.addEventListener("click",function(){c.classList.add("hidden");a.getElementById("cf-footer-ip").classList.remove("hidden")}))}var a=document;document.addEventListener&&a.addEventListener("DOMContentLoaded",d)})();</script>
+  </div><!-- /.error-footer -->
+
+    </div><!-- /#cf-error-details -->
+  </div><!-- /#cf-wrapper -->
+
+  <script>
+    window._cf_translation = {};
+    
+    
+  </script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a34dec063992c149',t:'MTc4ODM2Njg2NA=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
+2026-09-02 22:04:24,217 [ERROR] orchestrator - !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2026-09-02 22:04:24,218 [ERROR] orchestrator - PIPELINE HALTED AT STAGE 1 (Trend Scout): 403 Client Error: Forbidden for url: https://tabitoken.com/v1/chat/completions
+2026-09-02 22:04:24,218 [ERROR] orchestrator - TRACEBACK:
+2026-09-02 22:04:24,227 [ERROR] orchestrator - Traceback (most recent call last):
+  File "C:\Users\dell\.gemini\antigravity\scratch\youtube_pipeline\orchestrator.py", line 109, in run_pipeline
+    func()
+    ~~~~^^
+  File "C:\Users\dell\.gemini\antigravity\scratch\youtube_pipeline\agents\agent1_trend_scout.py", line 58, in run_agent1
+    result = client.generate_json(user_prompt, system_prompt=system_prompt, temperature=0.7)
+  File "C:\Users\dell\.gemini\antigravity\scratch\youtube_pipeline\utils\tabi_client.py", line 87, in generate_json
+    raw = self.generate(
+        augmented_prompt,
+    ...<2 lines>...
+        max_tokens=max_tokens,
+    )
+  File "C:\Users\dell\.gemini\antigravity\scratch\youtube_pipeline\utils\tabi_client.py", line 66, in generate
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\dell\AppData\Roaming\Python\Python314\site-packages\requests\models.py", line 1167, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://tabitoken.com/v1/chat/completions
+
+2026-09-02 22:04:24,228 [ERROR] orchestrator - Workspace state preserved in: C:\Users\dell\.gemini\antigravity\scratch\youtube_pipeline\workspace
+2026-09-02 22:04:24,229 [ERROR] orchestrator - You can resume after fixing with: python orchestrator.py --stage 1
+2026-09-02 22:04:24,230 [ERROR] orchestrator - !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2026-09-02 22:07:28,355 [INFO] orchestrator - ======================================================================
+2026-09-02 22:07:28,356 [INFO] orchestrator - STARTING 13-AGENT PIPELINE (Stages 1 -> 13) | Dry-run: False
+2026-09-02 22:07:28,357 [INFO] orchestrator - ======================================================================
+2026-09-02 22:07:28,357 [INFO] orchestrator - 
+>>> EXECUTING STAGE 1: Trend Scout
+2026-09-02 22:07:28,357 [INFO] agent1_trend_scout - Agent 1 starting: Scouting viral concepts for niche: Data Visualization & Global Statistics
+2026-09-02 22:09:35,094 [INFO] httpx2 - HTTP Request: POST https://tabitoken.com/v1/chat/completions "HTTP/1.1 524 <none>"
+2026-09-02 22:09:35,096 [INFO] openai._base_client - Retrying request in 120.000000 seconds
+2026-09-02 22:11:32,204 [INFO] orchestrator - ======================================================================
+2026-09-02 22:11:32,205 [INFO] orchestrator - STARTING 13-AGENT PIPELINE (Stages 1 -> 13) | Dry-run: False
+2026-09-02 22:11:32,205 [INFO] orchestrator - ======================================================================
+2026-09-02 22:11:32,206 [INFO] orchestrator - 
+>>> EXECUTING STAGE 1: Trend Scout
+2026-09-02 22:11:32,206 [INFO] agent1_trend_scout - Agent 1 starting: Scouting viral concepts for niche: Data Visualization & Global Statistics
+2026-09-02 22:11:35,420 [INFO] httpx2 - HTTP Request: POST https://tabitoken.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-02 22:15:22,035 [INFO] agent1_trend_scout - Agent 1 completed: Selected topic 'South Korea Broke Population Math (100 Grandparents, 4 Great-Grandkids)' -> C:\Users\dell\.gemini\antigravity\scratch\youtube_pipeline\workspace\01_topic.json
+2026-09-02 22:15:22,036 [INFO] orchestrator - <<< STAGE 1 (Trend Scout) COMPLETED SUCCESSFULLY.
+2026-09-02 22:15:22,037 [INFO] orchestrator - 
+>>> EXECUTING STAGE 2: Source Writer
+2026-09-02 22:15:22,037 [INFO] agent2_source_writer - Agent 2 starting: Reading topic from C:\Users\dell\.gemini\antigravity\scratch\youtube_pipeline\workspace\01_topic.json
+2026-09-02 22:15:23,714 [INFO] httpx2 - HTTP Request: POST https://tabitoken.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-02 22:18:03,475 [INFO] agent2_source_writer - Agent 2 completed: Generated 2037 words -> C:\Users\dell\.gemini\antigravity\scratch\youtube_pipeline\workspace\02_source.txt
+2026-09-02 22:18:03,476 [INFO] orchestrator - <<< STAGE 2 (Source Writer) COMPLETED SUCCESSFULLY.
+2026-09-02 22:18:03,476 [INFO] orchestrator - 
+>>> EXECUTING STAGE 3: Fact & Ingestion Verifier
+2026-09-02 22:18:03,480 [INFO] agent3_fact_verifier - Agent 3 starting: Verifying source text from C:\Users\dell\.gemini\antigravity\scratch\youtube_pipeline\workspace\02_source.txt
+2026-09-02 22:18:05,665 [INFO] httpx2 - HTTP Request: POST https://tabitoken.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-02 22:19:10,311 [ERROR] orchestrator - !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2026-09-02 22:19:10,311 [ERROR] orchestrator - PIPELINE HALTED AT STAGE 3 (Fact & Ingestion Verifier): peer closed connection without sending complete message body (incomplete chunked read)
+2026-09-02 22:19:10,311 [ERROR] orchestrator - TRACEBACK:
+2026-09-02 22:19:10,398 [ERROR] orchestrator - Traceback (most recent call last):
+  File "C:\Users\dell\AppData\Roaming\Python\Python314\site-packages\httpcore2\_exceptions.py", line 13, in map_exceptions
+    yield
+  File "C:\Users\dell\AppData\Roaming\Python\Python314\site-packages\httpcore2\_sync\http11.py", line 197, in _receive_event
+    event = self._h11_state.next_event()
+  File "C:\Users\dell\AppData\Roaming\Python\Python314\site-packages\h11\_connection.py", line 481, in next_event
+    event = self._extract_next_receive_event()
+  File "C:\Users\dell\AppData\Roaming\Python\Python314\site-packages\h11\_connection.py", line 431, in _extract_next_receive_event
+    event = self._reader.read_eof()
+  File "C:\Users\dell\AppData\Roaming\Python\Python314\site-packages\h11\_readers.py", line 207, in read_eof
+    raise RemoteProtocolError(
+    ...<2 lines>...
+    )
+h11._util.RemoteProtocolError: peer closed connection without sending complete message body (incomplete chunked read)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\dell\AppData\Roaming\Python\Python314\site-packages\httpx2\_transports\default.py", line 98, in map_httpcore_exceptions
+    yield
+  File "C:\Users\dell\AppData\Roaming\Python\Python314\site-packages\httpx2\_transports\default.py", line 124, in __iter__
+    yield from self._httpcore_stream
+  File "C:\Users\dell\AppData\Roaming\Python\Python314\site-packages\httpcore2\_sync\connection_pool.py", line 426, in __iter__
+    for chunk in iterator:
+                 ^^^^^^^^
+  File "C:\Users\dell\AppData\Roaming\Python\Python314\site-packages\httpcore2\_sync\http11.py", line 320, in __iter__
+    raise exc
+  File "C:\Users\dell\AppData\Roaming\Python\Python314\site-packages\httpcore2\_sync\http11.py", line 312, in __iter__
+    for chunk in iterator:
+                 ^^^^^^^^
+  File "C:\Users\dell\AppData\Roaming\Python\Python314\site-packages\httpcore2\_sync\http11.py", line 188, in _receive_response_body
+    event = self._receive_event(timeout=timeout)
+  File "C:\Users\dell\AppData\Roaming\Python\Python314\site-packages\httpcore2\_sync\http11.py", line 196, in _receive_event
+    with map_exceptions({h11.RemoteProtocolError: RemoteProtocolError}):
+         ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python314\Lib\contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\dell\AppData\Roaming\Python\Python314\site-packages\httpcore2\_exceptions.py", line 17, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore2.RemoteProtocolError: peer closed connection without sending complete message body (incomplete chunked read)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\dell\.gemini\antigravity\scratch\youtube_pipeline\orchestrator.py", line 109, in run_pipeline
+    func()
+    ~~~~^^
+  File "C:\Users\dell\.gemini\antigravity\scratch\youtube_pipeline\agents\agent3_fact_verifier.py", line 43, in run_agent3
+    verified_text = client.generate(
+        user_prompt, system_prompt=system_prompt, temperature=0.2, max_tokens=4096
+    )
+  File "C:\Users\dell\.gemini\antigravity\scratch\youtube_pipeline\utils\tabi_client.py", line 41, in generate
+    for chunk in response:
+                 ^^^^^^^^
+  File "C:\Users\dell\AppData\Roaming\Python\Python314\site-packages\openai\_streaming.py", line 50, in __iter__
+    for item in self._iterator:
+                ^^^^^^^^^^^^^^
+  File "C:\Users\dell\AppData\Roaming\Python\Python314\site-packages\openai\_streaming.py", line 63, in __stream__
+    for sse in iterator:
+               ^^^^^^^^
+  File "C:\Users\dell\AppData\Roaming\Python\Python314\site-packages\openai\_streaming.py", line 54, in _iter_events
+    yield from self._decoder.iter_bytes(self.response.iter_bytes())
+  File "C:\Users\dell\AppData\Roaming\Python\Python314\site-packages\openai\_streaming.py", line 350, in iter_bytes
+    for chunk in iterator:
+                 ^^^^^^^^
+  File "C:\Users\dell\AppData\Roaming\Python\Python314\site-packages\httpx2\_models.py", line 892, in iter_bytes
+    for raw_bytes in self.iter_raw():
+                     ~~~~~~~~~~~~~^^
+  File "C:\Users\dell\AppData\Roaming\Python\Python314\site-packages\httpx2\_models.py", line 947, in iter_raw
+    for raw_stream_bytes in self.stream:
+                            ^^^^^^^^^^^
+  File "C:\Users\dell\AppData\Roaming\Python\Python314\site-packages\httpx2\_client.py", line 143, in __iter__
+    yield from self._stream
+  File "C:\Users\dell\AppData\Roaming\Python\Python314\site-packages\httpx2\_transports\default.py", line 123, in __iter__
+    with map_httpcore_exceptions():
+         ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Program Files\Python314\Lib\contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\dell\AppData\Roaming\Python\Python314\site-packages\httpx2\_transports\default.py", line 115, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx2.RemoteProtocolError: peer closed connection without sending complete message body (incomplete chunked read)
+
+2026-09-02 22:19:10,400 [ERROR] orchestrator - Workspace state preserved in: C:\Users\dell\.gemini\antigravity\scratch\youtube_pipeline\workspace
+2026-09-02 22:19:10,400 [ERROR] orchestrator - You can resume after fixing with: python orchestrator.py --stage 3
+2026-09-02 22:19:10,404 [ERROR] orchestrator - !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2026-09-02 22:22:45,829 [INFO] orchestrator - ======================================================================
+2026-09-02 22:22:45,829 [INFO] orchestrator - STARTING 13-AGENT PIPELINE (Stages 4 -> 13) | Dry-run: False
+2026-09-02 22:22:45,830 [INFO] orchestrator - ======================================================================
+2026-09-02 22:22:45,830 [INFO] orchestrator - 
+>>> EXECUTING STAGE 4: Prompt Synthesizer
+2026-09-02 22:22:45,831 [INFO] agent4_prompt_synthesizer - Agent 4 starting: Reading verified source from C:\Users\dell\.gemini\antigravity\scratch\youtube_pipeline\workspace\03_verified_source.txt
+2026-09-02 22:22:49,345 [INFO] httpx2 - HTTP Request: POST https://tabitoken.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-02 22:22:59,889 [INFO] agent4_prompt_synthesizer - Agent 4 completed: Prompts synthesized -> C:\Users\dell\.gemini\antigravity\scratch\youtube_pipeline\workspace\04_notebook_prompts.json
+2026-09-02 22:22:59,889 [INFO] orchestrator - <<< STAGE 4 (Prompt Synthesizer) COMPLETED SUCCESSFULLY.
+2026-09-02 22:22:59,889 [INFO] orchestrator - 
+>>> EXECUTING STAGE 5: NotebookLM Feeder
+2026-09-02 22:22:59,890 [INFO] agent5_notebook_feeder - Agent 5 starting: Ingesting source & prompts into NotebookLM
+2026-09-02 22:22:59,891 [INFO] cdp_driver - Connecting to Chrome CDP at http://localhost:9222...
+2026-09-02 22:26:01,085 [ERROR] orchestrator - !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2026-09-02 22:26:01,086 [ERROR] orchestrator - PIPELINE HALTED AT STAGE 5 (NotebookLM Feeder): Failed to connect to Chrome over CDP at http://localhost:9222.
+Ensure Google Chrome is launched with remote debugging enabled:
+  chrome.exe --remote-debugging-port=9222 --user-data-dir="C:\Users\dell\AppData\Local\Google\Chrome\User Data"
+2026-09-02 22:26:01,087 [ERROR] orchestrator - TRACEBACK:
+2026-09-02 22:26:01,093 [ERROR] orchestrator - Traceback (most recent call last):
+  File "C:\Users\dell\.gemini\antigravity\scratch\youtube_pipeline\utils\cdp_driver.py", line 25, in get_cdp_session
+    browser = pw.chromium.connect_over_cdp(cdp_url)
+  File "C:\Users\dell\AppData\Roaming\Python\Python314\site-packages\playwright\sync_api\_generated.py", line 17126, in connect_over_cdp
+    self._sync(
+    ~~~~~~~~~~^
+        self._impl_obj.connect_over_cdp(
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+        )
+        ^
+    )
+    ^
+  File "C:\Users\dell\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\_sync_base.py", line 115, in _sync
+    return task.result()
+           ~~~~~~~~~~~^^
+  File "C:\Users\dell\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\_browser_type.py", line 205, in connect_over_cdp
+    response = await self._channel.send_return_as_dict(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        "connectOverCDP", TimeoutSettings.launch_timeout, params
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\dell\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\_connection.py", line 103, in send_return_as_dict
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\dell\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\_connection.py", line 632, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TimeoutError: BrowserType.connect_over_cdp: Timeout 180000ms exceeded.
+Call log:
+  - <ws preparing> retrieving websocket url from http://localhost:9222
+  - <ws connecting> ws://localhost:9222/devtools/browser/d3a94751-32b5-4bfc-8a5a-604c50192b55
+  - <ws connected> ws://localhost:9222/devtools/browser/d3a94751-32b5-4bfc-8a5a-604c50192b55
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\dell\.gemini\antigravity\scratch\youtube_pipeline\orchestrator.py", line 105, in run_pipeline
+    func(dry_run=dry_run)
+    ~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\dell\.gemini\antigravity\scratch\youtube_pipeline\agents\agent5_notebook_feeder.py", line 48, in run_agent5
+    with get_cdp_session() as (context, page):
+         ~~~~~~~~~~~~~~~^^
+  File "C:\Program Files\Python314\Lib\contextlib.py", line 141, in __enter__
+    return next(self.gen)
+  File "C:\Users\dell\.gemini\antigravity\scratch\youtube_pipeline\utils\cdp_driver.py", line 27, in get_cdp_session
+    raise ConnectionError(
+    ...<3 lines>...
+    ) from e
+ConnectionError: Failed to connect to Chrome over CDP at http://localhost:9222.
+Ensure Google Chrome is launched with remote debugging enabled:
+  chrome.exe --remote-debugging-port=9222 --user-data-dir="C:\Users\dell\AppData\Local\Google\Chrome\User Data"
+
+2026-09-02 22:26:01,094 [ERROR] orchestrator - Workspace state preserved in: C:\Users\dell\.gemini\antigravity\scratch\youtube_pipeline\workspace
+2026-09-02 22:26:01,094 [ERROR] orchestrator - You can resume after fixing with: python orchestrator.py --stage 5
+2026-09-02 22:26:01,095 [ERROR] orchestrator - !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2026-09-02 22:43:47,208 [INFO] orchestrator - ======================================================================
+2026-09-02 22:43:47,210 [INFO] orchestrator - STARTING 13-AGENT PIPELINE (Stages 5 -> 13) | Dry-run: False
+2026-09-02 22:43:47,211 [INFO] orchestrator - ======================================================================
+2026-09-02 22:43:47,211 [INFO] orchestrator - 
+>>> EXECUTING STAGE 5: NotebookLM Feeder
+2026-09-02 22:43:47,211 [INFO] agent5_notebook_feeder - Agent 5 starting: Ingesting source & prompts into NotebookLM
+2026-09-02 22:43:47,214 [INFO] cdp_driver - Connecting to Chrome CDP at http://localhost:9222...
+2026-09-02 22:43:49,177 [INFO] cdp_driver - No matching tab found. Opening a new tab...
+2026-09-02 22:43:50,171 [INFO] cdp_driver - Navigating to https://notebooklm.google.com/...
+2026-09-02 22:43:53,012 [INFO] agent5_notebook_feeder - Current page URL: https://notebook.google.com/
+2026-09-02 22:43:58,508 [INFO] agent5_notebook_feeder - Clicking 'New notebook' via selector: button:has-text("Create new")
+2026-09-02 22:44:02,979 [INFO] agent5_notebook_feeder - Found 'Copied text' button: button:has-text("Copied text")
+2026-09-02 22:44:06,499 [INFO] agent5_notebook_feeder - Pasting verified source (12302 chars) into textarea...
+2026-09-02 22:44:08,655 [INFO] agent5_notebook_feeder - Clicking Insert button: button:has-text("Insert")
+2026-09-02 22:44:09,153 [INFO] agent5_notebook_feeder - Waiting 30 seconds for source ingestion & vector indexing...
+2026-09-02 22:44:39,172 [INFO] agent5_notebook_feeder - Clicking Video Overview button: div:has-text("Video Overview")
+2026-09-02 22:44:41,257 [INFO] agent5_notebook_feeder - Injecting custom prompts into field: textarea
+2026-09-02 22:44:42,300 [INFO] agent5_notebook_feeder - Triggering Video Generation: button:has-text("Create")
+2026-09-02 22:44:45,462 [INFO] agent5_notebook_feeder - Agent 5 completed: NotebookLM generation confirmed and queued.
+2026-09-02 22:44:45,464 [INFO] cdp_driver - Closing CDP connection (user Chrome remains running).
+2026-09-02 22:44:45,614 [INFO] orchestrator - <<< STAGE 5 (NotebookLM Feeder) COMPLETED SUCCESSFULLY.
+2026-09-02 22:44:45,616 [INFO] orchestrator - 
+>>> EXECUTING STAGE 6: Asset Harvester
+2026-09-02 22:44:45,617 [INFO] agent6_asset_harvester - Agent 6 starting: Asset Harvester (Initial wait: 1200s, Poll interval: 120s, Timeout: 4500s)
+2026-09-02 22:44:45,618 [INFO] agent6_asset_harvester - Starting initial silent wait of 1200 seconds (20.0 minutes)...
+2026-09-02 22:53:49,350 [INFO] orchestrator - ======================================================================
+2026-09-02 22:53:49,350 [INFO] orchestrator - STARTING 13-AGENT PIPELINE (Stages 5 -> 13) | Dry-run: False
+2026-09-02 22:53:49,351 [INFO] orchestrator - ======================================================================
+2026-09-02 22:53:49,351 [INFO] orchestrator - 
+>>> EXECUTING STAGE 5: NotebookLM Feeder
+2026-09-02 22:53:49,353 [INFO] agent5_notebook_feeder - Agent 5 starting: Ingesting source & prompts into NotebookLM
+2026-09-02 22:53:49,354 [INFO] cdp_driver - Connecting to Chrome CDP at http://localhost:9222...
+2026-09-02 22:53:51,053 [INFO] cdp_driver - No matching tab found. Opening a new tab...
+2026-09-02 22:53:51,513 [INFO] cdp_driver - Navigating to https://notebooklm.google.com/...
+2026-09-02 22:53:52,905 [INFO] agent5_notebook_feeder - Connected to page: https://notebook.google.com/
+2026-09-02 22:53:52,907 [INFO] agent5_notebook_feeder - Creating fresh notebook...
+2026-09-02 22:53:53,366 [INFO] agent5_notebook_feeder - Selecting 'Copied text' source type...
+2026-09-02 22:54:18,378 [INFO] cdp_driver - Closing CDP connection (user Chrome remains running).
+2026-09-02 22:54:18,445 [ERROR] orchestrator - !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2026-09-02 22:54:18,445 [ERROR] orchestrator - PIPELINE HALTED AT STAGE 5 (NotebookLM Feeder): Locator.wait_for: Timeout 25000ms exceeded.
+Call log:
+  - waiting for locator("button:has-text(\"Copied text\"), div[role=\"button\"]:has-text(\"Copied text\"), div:text-is(\"Copied text\")").first to be visible
+
+2026-09-02 22:54:18,446 [ERROR] orchestrator - TRACEBACK:
+2026-09-02 22:54:18,450 [ERROR] orchestrator - Traceback (most recent call last):
+  File "C:\Users\dell\.gemini\antigravity\scratch\youtube_pipeline\orchestrator.py", line 105, in run_pipeline
+    func(dry_run=dry_run)
+    ~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\dell\.gemini\antigravity\scratch\youtube_pipeline\agents\agent5_notebook_feeder.py", line 57, in run_agent5
+    copied_text_btn.wait_for(state="visible", timeout=25000)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dell\AppData\Roaming\Python\Python314\site-packages\playwright\sync_api\_generated.py", line 20539, in wait_for
+    self._sync(
+    ~~~~~~~~~~^
+        self._impl_obj.wait_for(timeout=to_milliseconds(timeout), state=state)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\dell\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\_sync_base.py", line 115, in _sync
+    return task.result()
+           ~~~~~~~~~~~^^
+  File "C:\Users\dell\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\_locator.py", line 748, in wait_for
+    await self._frame.wait_for_selector(
+        self._selector, strict=True, timeout=timeout, state=state
+    )
+  File "C:\Users\dell\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\_frame.py", line 394, in wait_for_selector
+    await self._channel.send(
+        "waitForSelector", self._timeout, locals_to_params(locals())
+    )
+  File "C:\Users\dell\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\_connection.py", line 76, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\dell\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\_connection.py", line 632, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TimeoutError: Locator.wait_for: Timeout 25000ms exceeded.
+Call log:
+  - waiting for locator("button:has-text(\"Copied text\"), div[role=\"button\"]:has-text(\"Copied text\"), div:text-is(\"Copied text\")").first to be visible
+
+
+2026-09-02 22:54:18,450 [ERROR] orchestrator - Workspace state preserved in: C:\Users\dell\.gemini\antigravity\scratch\youtube_pipeline\workspace
+2026-09-02 22:54:18,451 [ERROR] orchestrator - You can resume after fixing with: python orchestrator.py --stage 5
+2026-09-02 22:54:18,451 [ERROR] orchestrator - !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2026-09-02 22:57:11,771 [INFO] orchestrator - ======================================================================
+2026-09-02 22:57:11,771 [INFO] orchestrator - STARTING 13-AGENT PIPELINE (Stages 5 -> 13) | Dry-run: False
+2026-09-02 22:57:11,771 [INFO] orchestrator - ======================================================================
+2026-09-02 22:57:11,772 [INFO] orchestrator - 
+>>> EXECUTING STAGE 5: NotebookLM Feeder
+2026-09-02 22:57:11,773 [INFO] agent5_notebook_feeder - Agent 5 starting: Ingesting source & prompts into NotebookLM
+2026-09-02 22:57:11,773 [INFO] cdp_driver - Connecting to Chrome CDP at http://localhost:9222...
+2026-09-02 22:57:12,594 [ERROR] orchestrator - !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2026-09-02 22:57:12,595 [ERROR] orchestrator - PIPELINE HALTED AT STAGE 5 (NotebookLM Feeder): Failed to connect to Chrome over CDP at http://localhost:9222.
+Ensure Google Chrome is launched with remote debugging enabled:
+  chrome.exe --remote-debugging-port=9222 --user-data-dir="C:\Users\dell\AppData\Local\Google\Chrome\User Data"
+2026-09-02 22:57:12,595 [ERROR] orchestrator - TRACEBACK:
+2026-09-02 22:57:12,601 [ERROR] orchestrator - Traceback (most recent call last):
+  File "C:\Users\dell\.gemini\antigravity\scratch\youtube_pipeline\utils\cdp_driver.py", line 25, in get_cdp_session
+    browser = pw.chromium.connect_over_cdp(cdp_url)
+  File "C:\Users\dell\AppData\Roaming\Python\Python314\site-packages\playwright\sync_api\_generated.py", line 17126, in connect_over_cdp
+    self._sync(
+    ~~~~~~~~~~^
+        self._impl_obj.connect_over_cdp(
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+        )
+        ^
+    )
+    ^
+  File "C:\Users\dell\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\_sync_base.py", line 115, in _sync
+    return task.result()
+           ~~~~~~~~~~~^^
+  File "C:\Users\dell\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\_browser_type.py", line 205, in connect_over_cdp
+    response = await self._channel.send_return_as_dict(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        "connectOverCDP", TimeoutSettings.launch_timeout, params
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\dell\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\_connection.py", line 103, in send_return_as_dict
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\dell\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\_connection.py", line 632, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.Error: BrowserType.connect_over_cdp: connect ECONNREFUSED ::1:9222
+Call log:
+  - <ws preparing> retrieving websocket url from http://localhost:9222
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\dell\.gemini\antigravity\scratch\youtube_pipeline\orchestrator.py", line 105, in run_pipeline
+    func(dry_run=dry_run)
+    ~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\dell\.gemini\antigravity\scratch\youtube_pipeline\agents\agent5_notebook_feeder.py", line 38, in run_agent5
+    with get_cdp_session() as (context, page):
+         ~~~~~~~~~~~~~~~^^
+  File "C:\Program Files\Python314\Lib\contextlib.py", line 141, in __enter__
+    return next(self.gen)
+  File "C:\Users\dell\.gemini\antigravity\scratch\youtube_pipeline\utils\cdp_driver.py", line 27, in get_cdp_session
+    raise ConnectionError(
+    ...<3 lines>...
+    ) from e
+ConnectionError: Failed to connect to Chrome over CDP at http://localhost:9222.
+Ensure Google Chrome is launched with remote debugging enabled:
+  chrome.exe --remote-debugging-port=9222 --user-data-dir="C:\Users\dell\AppData\Local\Google\Chrome\User Data"
+
+2026-09-02 22:57:12,602 [ERROR] orchestrator - Workspace state preserved in: C:\Users\dell\.gemini\antigravity\scratch\youtube_pipeline\workspace
+2026-09-02 22:57:12,602 [ERROR] orchestrator - You can resume after fixing with: python orchestrator.py --stage 5
+2026-09-02 22:57:12,603 [ERROR] orchestrator - !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2026-09-02 22:58:44,870 [INFO] orchestrator - ======================================================================
+2026-09-02 22:58:44,871 [INFO] orchestrator - STARTING 13-AGENT PIPELINE (Stages 5 -> 13) | Dry-run: False
+2026-09-02 22:58:44,871 [INFO] orchestrator - ======================================================================
+2026-09-02 22:58:44,871 [INFO] orchestrator - 
+>>> EXECUTING STAGE 5: NotebookLM Feeder
+2026-09-02 22:58:44,874 [INFO] agent5_notebook_feeder - Agent 5 starting: Ingesting source & prompts into NotebookLM
+2026-09-02 22:58:44,874 [INFO] cdp_driver - Connecting to Chrome CDP at http://127.0.0.1:9222...
+2026-09-02 22:58:45,947 [INFO] cdp_driver - No matching tab found. Opening a new tab...
+2026-09-02 22:58:46,417 [INFO] cdp_driver - Navigating to https://notebooklm.google.com/...
+2026-09-02 22:58:48,042 [INFO] agent5_notebook_feeder - Connected to page: https://notebook.google.com/
+2026-09-02 22:58:48,043 [INFO] agent5_notebook_feeder - Waiting for NotebookLM dashboard to render...
+2026-09-02 22:58:53,054 [INFO] agent5_notebook_feeder - Locating and clicking 'New notebook' button...
+2026-09-02 22:58:53,583 [INFO] agent5_notebook_feeder - Successfully clicked 'New notebook'.
+2026-09-02 22:58:58,597 [INFO] agent5_notebook_feeder - Waiting for 'Copied text' option to appear...
+2026-09-02 22:58:58,841 [INFO] agent5_notebook_feeder - Clicked 'Copied text'.
+2026-09-02 22:59:00,854 [INFO] agent5_notebook_feeder - Pasting source (12302 chars)...
+2026-09-02 22:59:03,156 [INFO] agent5_notebook_feeder - Clicking Insert button...
+2026-09-02 22:59:33,187 [INFO] cdp_driver - Closing CDP connection (user Chrome remains running).
+2026-09-02 22:59:33,262 [ERROR] orchestrator - !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2026-09-02 22:59:33,263 [ERROR] orchestrator - PIPELINE HALTED AT STAGE 5 (NotebookLM Feeder): Locator.click: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("button:has-text(\"Insert\"), button:has-text(\"Save\"), button:has-text(\"Add\")").first
+    - locator resolved to <button type="button" matbadgeposition="after" _ngcontent-ng-c2502478169="" aria-label="Create notebook" mat-ripple-loader-uninitialized="" mat-ripple-loader-class-name="mat-mdc-button-ripple" class="mdc-button mat-mdc-button-base mat-badge mat-tonal-button mat-unthemed mat-badge-overlap mat-badge-above mat-badge-after mat-badge-small mat-badge-hidden">…</button>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div class="cdk-overlay-backdrop cdk-overlay-dark-backdrop cdk-overlay-backdrop-showing"></div> from <div class="cdk-overlay-container">…</div> subtree intercepts pointer events
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div class="cdk-overlay-backdrop cdk-overlay-dark-backdrop cdk-overlay-backdrop-showing"></div> from <div class="cdk-overlay-container">…</div> subtree intercepts pointer events
+    - retrying click action
+      - waiting 100ms
+    31 × waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <div class="cdk-overlay-backdrop cdk-overlay-dark-backdrop cdk-overlay-backdrop-showing"></div> from <div class="cdk-overlay-container">…</div> subtree intercepts pointer events
+     - retrying click action
+       - waiting 500ms
+    - waiting for element to be visible, enabled and stable
+  - element was detached from the DOM, retrying
+    - locator resolved to <button type="button" matbadgeposition="after" _ngcontent-ng-c2502478169="" aria-label="Create notebook" mat-ripple-loader-uninitialized="" mat-ripple-loader-class-name="mat-mdc-button-ripple" class="mdc-button mat-mdc-button-base mat-badge mat-tonal-button mat-unthemed mat-badge-overlap mat-badge-above mat-badge-after mat-badge-small mat-badge-hidden">…</button>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div mat-dialog-content="" _ngcontent-ng-c839277872="" class="mat-mdc-dialog-content mdc-dialog__content">…</div> from <div class="cdk-overlay-container">…</div> subtree intercepts pointer events
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div mat-dialog-content="" _ngcontent-ng-c839277872="" class="mat-mdc-dialog-content mdc-dialog__content">…</div> from <div class="cdk-overlay-container">…</div> subtree intercepts pointer events
+    - retrying click action
+      - waiting 100ms
+    7 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div mat-dialog-content="" _ngcontent-ng-c839277872="" class="mat-mdc-dialog-content mdc-dialog__content">…</div> from <div class="cdk-overlay-container">…</div> subtree intercepts pointer events
+    - retrying click action
+      - waiting 500ms
+    - waiting for element to be visible, enabled and stable
+  - element was detached from the DOM, retrying
+    - locator resolved to <button type="button" matbadgeposition="after" _ngcontent-ng-c2502478169="" aria-label="Create notebook" mat-ripple-loader-uninitialized="" mat-ripple-loader-class-name="mat-mdc-button-ripple" class="mdc-button mat-mdc-button-base mat-badge mat-tonal-button mat-unthemed mat-badge-overlap mat-badge-above mat-badge-after mat-badge-small mat-badge-hidden">…</button>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div class="cdk-overlay-backdrop cdk-overlay-dark-backdrop cdk-overlay-backdrop-showing"></div> from <div class="cdk-overlay-container">…</div> subtree intercepts pointer events
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div class="cdk-overlay-backdrop cdk-overlay-dark-backdrop cdk-overlay-backdrop-showing"></div> from <div class="cdk-overlay-container">…</div> subtree intercepts pointer events
+    - retrying click action
+      - waiting 100ms
+    15 × waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <div class="cdk-overlay-backdrop cdk-overlay-dark-backdrop cdk-overlay-backdrop-showing"></div> from <div class="cdk-overlay-container">…</div> subtree intercepts pointer events
+     - retrying click action
+       - waiting 500ms
+
+2026-09-02 22:59:33,264 [ERROR] orchestrator - TRACEBACK:
+2026-09-02 22:59:33,272 [ERROR] orchestrator - Traceback (most recent call last):
+  File "C:\Users\dell\.gemini\antigravity\scratch\youtube_pipeline\orchestrator.py", line 105, in run_pipeline
+    func(dry_run=dry_run)
+    ~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\dell\.gemini\antigravity\scratch\youtube_pipeline\agents\agent5_notebook_feeder.py", line 96, in run_agent5
+    insert_btn.click()
+    ~~~~~~~~~~~~~~~~^^
+  File "C:\Users\dell\AppData\Roaming\Python\Python314\site-packages\playwright\sync_api\_generated.py", line 17876, in click
+    self._sync(
+    ~~~~~~~~~~^
+        self._impl_obj.click(
+        ^^^^^^^^^^^^^^^^^^^^^
+    ...<11 lines>...
+        )
+        ^
+    )
+    ^
+  File "C:\Users\dell\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\_sync_base.py", line 115, in _sync
+    return task.result()
+           ~~~~~~~~~~~^^
+  File "C:\Users\dell\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\_locator.py", line 165, in click
+    return await self._frame._click(self._selector, strict=True, **params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dell\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\_frame.py", line 593, in _click
+    await self._channel.send("click", self._timeout, locals_to_params(locals()))
+  File "C:\Users\dell\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\_connection.py", line 76, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\dell\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\_connection.py", line 632, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TimeoutError: Locator.click: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("button:has-text(\"Insert\"), button:has-text(\"Save\"), button:has-text(\"Add\")").first
+    - locator resolved to <button type="button" matbadgeposition="after" _ngcontent-ng-c2502478169="" aria-label="Create notebook" mat-ripple-loader-uninitialized="" mat-ripple-loader-class-name="mat-mdc-button-ripple" class="mdc-button mat-mdc-button-base mat-badge mat-tonal-button mat-unthemed mat-badge-overlap mat-badge-above mat-badge-after mat-badge-small mat-badge-hidden">…</button>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div class="cdk-overlay-backdrop cdk-overlay-dark-backdrop cdk-overlay-backdrop-showing"></div> from <div class="cdk-overlay-container">…</div> subtree intercepts pointer events
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div class="cdk-overlay-backdrop cdk-overlay-dark-backdrop cdk-overlay-backdrop-showing"></div> from <div class="cdk-overlay-container">…</div> subtree intercepts pointer events
+    - retrying click action
+      - waiting 100ms
+    31 × waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <div class="cdk-overlay-backdrop cdk-overlay-dark-backdrop cdk-overlay-backdrop-showing"></div> from <div class="cdk-overlay-container">…</div> subtree intercepts pointer events
+     - retrying click action
+       - waiting 500ms
+    - waiting for element to be visible, enabled and stable
+  - element was detached from the DOM, retrying
+    - locator resolved to <button type="button" matbadgeposition="after" _ngcontent-ng-c2502478169="" aria-label="Create notebook" mat-ripple-loader-uninitialized="" mat-ripple-loader-class-name="mat-mdc-button-ripple" class="mdc-button mat-mdc-button-base mat-badge mat-tonal-button mat-unthemed mat-badge-overlap mat-badge-above mat-badge-after mat-badge-small mat-badge-hidden">…</button>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div mat-dialog-content="" _ngcontent-ng-c839277872="" class="mat-mdc-dialog-content mdc-dialog__content">…</div> from <div class="cdk-overlay-container">…</div> subtree intercepts pointer events
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div mat-dialog-content="" _ngcontent-ng-c839277872="" class="mat-mdc-dialog-content mdc-dialog__content">…</div> from <div class="cdk-overlay-container">…</div> subtree intercepts pointer events
+    - retrying click action
+      - waiting 100ms
+    7 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div mat-dialog-content="" _ngcontent-ng-c839277872="" class="mat-mdc-dialog-content mdc-dialog__content">…</div> from <div class="cdk-overlay-container">…</div> subtree intercepts pointer events
+    - retrying click action
+      - waiting 500ms
+    - waiting for element to be visible, enabled and stable
+  - element was detached from the DOM, retrying
+    - locator resolved to <button type="button" matbadgeposition="after" _ngcontent-ng-c2502478169="" aria-label="Create notebook" mat-ripple-loader-uninitialized="" mat-ripple-loader-class-name="mat-mdc-button-ripple" class="mdc-button mat-mdc-button-base mat-badge mat-tonal-button mat-unthemed mat-badge-overlap mat-badge-above mat-badge-after mat-badge-small mat-badge-hidden">…</button>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div class="cdk-overlay-backdrop cdk-overlay-dark-backdrop cdk-overlay-backdrop-showing"></div> from <div class="cdk-overlay-container">…</div> subtree intercepts pointer events
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div class="cdk-overlay-backdrop cdk-overlay-dark-backdrop cdk-overlay-backdrop-showing"></div> from <div class="cdk-overlay-container">…</div> subtree intercepts pointer events
+    - retrying click action
+      - waiting 100ms
+    15 × waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <div class="cdk-overlay-backdrop cdk-overlay-dark-backdrop cdk-overlay-backdrop-showing"></div> from <div class="cdk-overlay-container">…</div> subtree intercepts pointer events
+     - retrying click action
+       - waiting 500ms
+
+
+2026-09-02 22:59:33,273 [ERROR] orchestrator - Workspace state preserved in: C:\Users\dell\.gemini\antigravity\scratch\youtube_pipeline\workspace
+2026-09-02 22:59:33,273 [ERROR] orchestrator - You can resume after fixing with: python orchestrator.py --stage 5
+2026-09-02 22:59:33,274 [ERROR] orchestrator - !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2026-09-02 23:00:59,917 [INFO] orchestrator - ======================================================================
+2026-09-02 23:00:59,918 [INFO] orchestrator - STARTING 13-AGENT PIPELINE (Stages 5 -> 13) | Dry-run: False
+2026-09-02 23:00:59,918 [INFO] orchestrator - ======================================================================
+2026-09-02 23:00:59,919 [INFO] orchestrator - 
+>>> EXECUTING STAGE 5: NotebookLM Feeder
+2026-09-02 23:00:59,920 [INFO] agent5_notebook_feeder - Agent 5 starting: Ingesting source & prompts into NotebookLM
+2026-09-02 23:00:59,921 [INFO] cdp_driver - Connecting to Chrome CDP at http://127.0.0.1:9222...
+2026-09-02 23:01:00,897 [INFO] cdp_driver - No matching tab found. Opening a new tab...
+2026-09-02 23:01:01,229 [INFO] cdp_driver - Navigating to https://notebooklm.google.com/...
+2026-09-02 23:01:02,560 [INFO] agent5_notebook_feeder - Connected to page: https://notebook.google.com/
+2026-09-02 23:01:02,561 [INFO] agent5_notebook_feeder - Waiting for NotebookLM dashboard to render...
+2026-09-02 23:01:06,580 [INFO] agent5_notebook_feeder - Locating and clicking 'New notebook' button...
+2026-09-02 23:01:06,823 [INFO] agent5_notebook_feeder - Successfully clicked 'New notebook'.
+2026-09-02 23:01:10,836 [INFO] agent5_notebook_feeder - Waiting for 'Copied text' option to appear...
+2026-09-02 23:01:11,605 [INFO] agent5_notebook_feeder - Clicked 'Copied text'.
+2026-09-02 23:01:13,610 [INFO] agent5_notebook_feeder - Pasting source (12302 chars)...
+2026-09-02 23:01:15,810 [INFO] agent5_notebook_feeder - Locating 'Insert' button inside the modal...
+2026-09-02 23:01:15,873 [INFO] agent5_notebook_feeder - Successfully clicked 'Insert' button.
+2026-09-02 23:01:15,873 [INFO] agent5_notebook_feeder - Waiting 25 seconds for source ingestion & indexing...
+2026-09-02 23:01:40,878 [INFO] agent5_notebook_feeder - Targeting Video Overview in Studio panel...
+2026-09-02 23:01:40,895 [INFO] agent5_notebook_feeder - Clicking Video Overview tile...
+2026-09-02 23:01:55,540 [INFO] agent5_notebook_feeder - Injecting custom prompts...
+2026-09-02 23:01:57,171 [INFO] agent5_notebook_feeder - Triggering generation...
+2026-09-02 23:01:57,217 [INFO] agent5_notebook_feeder - Clicked Generate inside dialog.
+2026-09-02 23:02:01,220 [INFO] agent5_notebook_feeder - Agent 5 completed: NotebookLM generation confirmed and queued.
+2026-09-02 23:02:01,220 [INFO] cdp_driver - Closing CDP connection (user Chrome remains running).
+2026-09-02 23:02:01,293 [INFO] orchestrator - <<< STAGE 5 (NotebookLM Feeder) COMPLETED SUCCESSFULLY.
+2026-09-02 23:02:01,294 [INFO] orchestrator - 
+>>> EXECUTING STAGE 6: Asset Harvester
+2026-09-02 23:02:01,294 [INFO] agent6_asset_harvester - Agent 6 starting: Asset Harvester (Initial wait: 1200s, Poll interval: 120s, Timeout: 4500s)
+2026-09-02 23:02:01,294 [INFO] agent6_asset_harvester - Starting initial silent wait of 1200 seconds (20.0 minutes)...
+2026-09-02 23:05:16,733 [INFO] orchestrator - ======================================================================
+2026-09-02 23:05:16,733 [INFO] orchestrator - STARTING 13-AGENT PIPELINE (Stages 5 -> 13) | Dry-run: False
+2026-09-02 23:05:16,734 [INFO] orchestrator - ======================================================================
+2026-09-02 23:05:16,734 [INFO] orchestrator - 
+>>> EXECUTING STAGE 5: NotebookLM Feeder
+2026-09-02 23:05:16,736 [INFO] agent5_notebook_feeder - Agent 5 starting: Ingesting source & prompts into NotebookLM
+2026-09-02 23:05:16,736 [INFO] cdp_driver - Connecting to Chrome CDP at http://127.0.0.1:9222...
+2026-09-02 23:05:17,702 [INFO] cdp_driver - No matching tab found. Opening a new tab...
+2026-09-02 23:05:18,268 [INFO] cdp_driver - Navigating to https://notebooklm.google.com/...
+2026-09-02 23:05:19,936 [INFO] agent5_notebook_feeder - Connected to page: https://notebook.google.com/
+2026-09-02 23:05:19,938 [INFO] agent5_notebook_feeder - Navigating to https://notebooklm.google.com/ ...
+2026-09-02 23:05:25,393 [INFO] agent5_notebook_feeder - Locating and clicking 'New notebook' button...
+2026-09-02 23:05:25,665 [INFO] agent5_notebook_feeder - Successfully clicked 'New notebook'.
+2026-09-02 23:05:29,690 [INFO] agent5_notebook_feeder - Clicking 'Copied text' option...
+2026-09-02 23:05:32,427 [INFO] agent5_notebook_feeder - Targeting 'Paste text here' area (avoiding links/search boxes)...
+2026-09-02 23:05:32,453 [INFO] agent5_notebook_feeder - Pasting verified source text (12302 chars) into Text Source area...
+2026-09-02 23:05:34,651 [INFO] agent5_notebook_feeder - Locating and clicking 'Insert' button...
+2026-09-02 23:05:34,733 [INFO] agent5_notebook_feeder - Successfully clicked 'Insert' button.
+2026-09-02 23:05:34,733 [INFO] agent5_notebook_feeder - Waiting 30 seconds for source ingestion & indexing...
+2026-09-02 23:06:04,742 [INFO] agent5_notebook_feeder - Targeting Video Overview in Studio panel...
+2026-09-02 23:06:04,753 [INFO] agent5_notebook_feeder - Clicking Video Overview card...
+2026-09-02 23:06:07,399 [INFO] agent5_notebook_feeder - Clicking Customize button on Overview...
+2026-09-02 23:06:37,423 [INFO] cdp_driver - Closing CDP connection (user Chrome remains running).
+2026-09-02 23:06:37,504 [ERROR] orchestrator - !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2026-09-02 23:06:37,505 [ERROR] orchestrator - PIPELINE HALTED AT STAGE 5 (NotebookLM Feeder): Locator.click: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("button:has-text(\"Customize\"), [aria-label*=\"Customize\"]").first
+    - locator resolved to <button mat-stroked-button="" mattooltipposition="above" _ngcontent-ng-c3642545309="" aria-label="Customize notebook" mat-ripple-loader-uninitialized="" mattooltipclass="custom-promo-tooltip" jslog="314253;track:generic_click,impression" mat-ripple-loader-class-name="mat-mdc-button-ripple" mattooltip="Add a cover image and custom note to personalize your notebook!" class="mdc-button mat-mdc-button-base mat-mdc-tooltip-trigger customize-button mat-label-medium mdc-button--outlined mat-mdc-outlined-butt…>…</button>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <mat-radio-button id="mat-radio-2" _ngcontent-ng-c3236668273="" class="mat-mdc-radio-button tile-radio-button mat-accent">…</mat-radio-button> from <div class="cdk-overlay-container">…</div> subtree intercepts pointer events
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <mat-radio-button id="mat-radio-2" _ngcontent-ng-c3236668273="" class="mat-mdc-radio-button tile-radio-button mat-accent">…</mat-radio-button> from <div class="cdk-overlay-container">…</div> subtree intercepts pointer events
+    - retrying click action
+      - waiting 100ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <label class="control-label" id="templateFormat-label" _ngcontent-ng-c3236668273="">Format</label> from <div class="cdk-overlay-container">…</div> subtree intercepts pointer events
+    - retrying click action
+      - waiting 500ms
+      - waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <label class="control-label" id="templateFormat-label" _ngcontent-ng-c3236668273="">Format</label> from <div class="cdk-overlay-container">…</div> subtree intercepts pointer events
+    - retrying click action
+      - waiting 500ms
+      - waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <mat-radio-button id="mat-radio-2" _ngcontent-ng-c3236668273="" class="mat-mdc-radio-button tile-radio-button mat-accent">…</mat-radio-button> from <div class="cdk-overlay-container">…</div> subtree intercepts pointer events
+    - retrying click action
+      - waiting 500ms
+      - waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <mat-radio-button id="mat-radio-2" _ngcontent-ng-c3236668273="" class="mat-mdc-radio-button tile-radio-button mat-accent">…</mat-radio-button> from <div class="cdk-overlay-container">…</div> subtree intercepts pointer events
+    - retrying click action
+      - waiting 500ms
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+    - <label class="control-label" id="templateFormat-label" _ngcontent-ng-c3236668273="">Format</label> from <div class="cdk-overlay-container">…</div> subtree intercepts pointer events
+  - retrying click action
+    - waiting 500ms
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+    - <p class="tile-description" _ngcontent-ng-c3236668273="">A rich, immersive experience that can unpack the …</p> from <div class="cdk-overlay-container">…</div> subtree intercepts pointer events
+  2 × retrying click action
+      - waiting 500ms
+      - waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <mat-radio-button id="mat-radio-2" _ngcontent-ng-c3236668273="" class="mat-mdc-radio-button tile-radio-button mat-accent">…</mat-radio-button> from <div class="cdk-overlay-container">…</div> subtree intercepts pointer events
+  2 × retrying click action
+      - waiting 500ms
+      - waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div _ngcontent-ng-c3236668273="" class="tile-label-container">…</div> from <div class="cdk-overlay-container">…</div> subtree intercepts pointer events
+  15 × retrying click action
+       - waiting 500ms
+       - waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <p class="tile-description" _ngcontent-ng-c3236668273="">A rich, immersive experience that can unpack the …</p> from <div class="cdk-overlay-container">…</div> subtree intercepts pointer events
+  - retrying click action
+    - waiting 500ms
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+    - <label class="control-label" id="templateFormat-label" _ngcontent-ng-c3236668273="">Format</label> from <div class="cdk-overlay-container">…</div> subtree intercepts pointer events
+  - retrying click action
+    - waiting 500ms
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+    - <div class="tile-content" _ngcontent-ng-c3236668273="">…</div> from <div class="cdk-overlay-container">…</div> subtree intercepts pointer events
+  - retrying click action
+    - waiting 500ms
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+    - <mat-radio-button id="mat-radio-2" _ngcontent-ng-c3236668273="" class="mat-mdc-radio-button tile-radio-button mat-accent cdk-focused cdk-mouse-focused mat-mdc-radio-checked">…</mat-radio-button> from <div class="cdk-overlay-container">…</div> subtree intercepts pointer events
+  2 × retrying click action
+      - waiting 500ms
+      - waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <p class="tile-description" _ngcontent-ng-c3236668273="">A rich, immersive experience that can unpack the …</p> from <div class="cdk-overlay-container">…</div> subtree intercepts pointer events
+  - retrying click action
+    - waiting 500ms
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+    - <mat-radio-button id="mat-radio-2" _ngcontent-ng-c3236668273="" class="mat-mdc-radio-button tile-radio-button mat-accent cdk-focused cdk-mouse-focused mat-mdc-radio-checked">…</mat-radio-button> from <div class="cdk-overlay-container">…</div> subtree intercepts pointer events
+  5 × retrying click action
+      - waiting 500ms
+      - waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <mat-radio-button id="mat-radio-2" _ngcontent-ng-c3236668273="" class="mat-mdc-radio-button tile-radio-button mat-accent mat-mdc-radio-checked">…</mat-radio-button> from <div class="cdk-overlay-container">…</div> subtree intercepts pointer events
+    - retrying click action
+      - waiting 500ms
+      - waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <p class="tile-description" _ngcontent-ng-c3236668273="">A rich, immersive experience that can unpack the …</p> from <div class="cdk-overlay-container">…</div> subtree intercepts pointer events
+    - retrying click action
+      - waiting 500ms
+      - waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <p class="tile-description" _ngcontent-ng-c3236668273="">A rich, immersive experience that can unpack the …</p> from <div class="cdk-overlay-container">…</div> subtree intercepts pointer events
+    - retrying click action
+      - waiting 500ms
+      - waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <mat-radio-button id="mat-radio-2" _ngcontent-ng-c3236668273="" class="mat-mdc-radio-button tile-radio-button mat-accent mat-mdc-radio-checked">…</mat-radio-button> from <div class="cdk-overlay-container">…</div> subtree intercepts pointer events
+  - retrying click action
+    - waiting 500ms
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+    - <mat-radio-button id="mat-radio-2" _ngcontent-ng-c3236668273="" class="mat-mdc-radio-button tile-radio-button mat-accent mat-mdc-radio-checked">…</mat-radio-button> from <div class="cdk-overlay-container">…</div> subtree intercepts pointer events
+  - retrying click action
+    - waiting 500ms
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+    - <p class="tile-description" _ngcontent-ng-c3236668273="">A rich, immersive experience that can unpack the …</p> from <div class="cdk-overlay-container">…</div> subtree intercepts pointer events
+  - retrying click action
+    - waiting 500ms
+
+2026-09-02 23:06:37,507 [ERROR] orchestrator - TRACEBACK:
+2026-09-02 23:06:37,516 [ERROR] orchestrator - Traceback (most recent call last):
+  File "C:\Users\dell\.gemini\antigravity\scratch\youtube_pipeline\orchestrator.py", line 105, in run_pipeline
+    func(dry_run=dry_run)
+    ~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\dell\.gemini\antigravity\scratch\youtube_pipeline\agents\agent5_notebook_feeder.py", line 121, in run_agent5
+    customize_btn.click()
+    ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\dell\AppData\Roaming\Python\Python314\site-packages\playwright\sync_api\_generated.py", line 17876, in click
+    self._sync(
+    ~~~~~~~~~~^
+        self._impl_obj.click(
+        ^^^^^^^^^^^^^^^^^^^^^
+    ...<11 lines>...
+        )
+        ^
+    )
+    ^
+  File "C:\Users\dell\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\_sync_base.py", line 115, in _sync
+    return task.result()
+           ~~~~~~~~~~~^^
+  File "C:\Users\dell\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\_locator.py", line 165, in click
+    return await self._frame._click(self._selector, strict=True, **params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dell\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\_frame.py", line 593, in _click
+    await self._channel.send("click", self._timeout, locals_to_params(locals()))
+  File "C:\Users\dell\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\_connection.py", line 76, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\dell\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\_connection.py", line 632, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TimeoutError: Locator.click: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("button:has-text(\"Customize\"), [aria-label*=\"Customize\"]").first
+    - locator resolved to <button mat-stroked-button="" mattooltipposition="above" _ngcontent-ng-c3642545309="" aria-label="Customize notebook" mat-ripple-loader-uninitialized="" mattooltipclass="custom-promo-tooltip" jslog="314253;track:generic_click,impression" mat-ripple-loader-class-name="mat-mdc-button-ripple" mattooltip="Add a cover image and custom note to personalize your notebook!" class="mdc-button mat-mdc-button-base mat-mdc-tooltip-trigger customize-button mat-label-medium mdc-button--outlined mat-mdc-outlined-butt…>…</button>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <mat-radio-button id="mat-radio-2" _ngcontent-ng-c3236668273="" class="mat-mdc-radio-button tile-radio-button mat-accent">…</mat-radio-button> from <div class="cdk-overlay-container">…</div> subtree intercepts pointer events
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <mat-radio-button id="mat-radio-2" _ngcontent-ng-c3236668273="" class="mat-mdc-radio-button tile-radio-button mat-accent">…</mat-radio-button> from <div class="cdk-overlay-container">…</div> subtree intercepts pointer events
+    - retrying click action
+      - waiting 100ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <label class="control-label" id="templateFormat-label" _ngcontent-ng-c3236668273="">Format</label> from <div class="cdk-overlay-container">…</div> subtree intercepts pointer events
+    - retrying click action
+      - waiting 500ms
+      - waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <label class="control-label" id="templateFormat-label" _ngcontent-ng-c3236668273="">Format</label> from <div class="cdk-overlay-container">…</div> subtree intercepts pointer events
+    - retrying click action
+      - waiting 500ms
+      - waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <mat-radio-button id="mat-radio-2" _ngcontent-ng-c3236668273="" class="mat-mdc-radio-button tile-radio-button mat-accent">…</mat-radio-button> from <div class="cdk-overlay-container">…</div> subtree intercepts pointer events
+    - retrying click action
+      - waiting 500ms
+      - waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <mat-radio-button id="mat-radio-2" _ngcontent-ng-c3236668273="" class="mat-mdc-radio-button tile-radio-button mat-accent">…</mat-radio-button> from <div class="cdk-overlay-container">…</div> subtree intercepts pointer events
+    - retrying click action
+      - waiting 500ms
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+    - <label class="control-label" id="templateFormat-label" _ngcontent-ng-c3236668273="">Format</label> from <div class="cdk-overlay-container">…</div> subtree intercepts pointer events
+  - retrying click action
+    - waiting 500ms
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+    - <p class="tile-description" _ngcontent-ng-c3236668273="">A rich, immersive experience that can unpack the …</p> from <div class="cdk-overlay-container">…</div> subtree intercepts pointer events
+  2 × retrying click action
+      - waiting 500ms
+      - waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <mat-radio-button id="mat-radio-2" _ngcontent-ng-c3236668273="" class="mat-mdc-radio-button tile-radio-button mat-accent">…</mat-radio-button> from <div class="cdk-overlay-container">…</div> subtree intercepts pointer events
+  2 × retrying click action
+      - waiting 500ms
+      - waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div _ngcontent-ng-c3236668273="" class="tile-label-container">…</div> from <div class="cdk-overlay-container">…</div> subtree intercepts pointer events
+  15 × retrying click action
+       - waiting 500ms
+       - waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <p class="tile-description" _ngcontent-ng-c3236668273="">A rich, immersive experience that can unpack the …</p> from <div class="cdk-overlay-container">…</div> subtree intercepts pointer events
+  - retrying click action
+    - waiting 500ms
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+    - <label class="control-label" id="templateFormat-label" _ngcontent-ng-c3236668273="">Format</label> from <div class="cdk-overlay-container">…</div> subtree intercepts pointer events
+  - retrying click action
+    - waiting 500ms
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+    - <div class="tile-content" _ngcontent-ng-c3236668273="">…</div> from <div class="cdk-overlay-container">…</div> subtree intercepts pointer events
+  - retrying click action
+    - waiting 500ms
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+    - <mat-radio-button id="mat-radio-2" _ngcontent-ng-c3236668273="" class="mat-mdc-radio-button tile-radio-button mat-accent cdk-focused cdk-mouse-focused mat-mdc-radio-checked">…</mat-radio-button> from <div class="cdk-overlay-container">…</div> subtree intercepts pointer events
+  2 × retrying click action
+      - waiting 500ms
+      - waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <p class="tile-description" _ngcontent-ng-c3236668273="">A rich, immersive experience that can unpack the …</p> from <div class="cdk-overlay-container">…</div> subtree intercepts pointer events
+  - retrying click action
+    - waiting 500ms
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+    - <mat-radio-button id="mat-radio-2" _ngcontent-ng-c3236668273="" class="mat-mdc-radio-button tile-radio-button mat-accent cdk-focused cdk-mouse-focused mat-mdc-radio-checked">…</mat-radio-button> from <div class="cdk-overlay-container">…</div> subtree intercepts pointer events
+  5 × retrying click action
+      - waiting 500ms
+      - waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <mat-radio-button id="mat-radio-2" _ngcontent-ng-c3236668273="" class="mat-mdc-radio-button tile-radio-button mat-accent mat-mdc-radio-checked">…</mat-radio-button> from <div class="cdk-overlay-container">…</div> subtree intercepts pointer events
+    - retrying click action
+      - waiting 500ms
+      - waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <p class="tile-description" _ngcontent-ng-c3236668273="">A rich, immersive experience that can unpack the …</p> from <div class="cdk-overlay-container">…</div> subtree intercepts pointer events
+    - retrying click action
+      - waiting 500ms
+      - waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <p class="tile-description" _ngcontent-ng-c3236668273="">A rich, immersive experience that can unpack the …</p> from <div class="cdk-overlay-container">…</div> subtree intercepts pointer events
+    - retrying click action
+      - waiting 500ms
+      - waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <mat-radio-button id="mat-radio-2" _ngcontent-ng-c3236668273="" class="mat-mdc-radio-button tile-radio-button mat-accent mat-mdc-radio-checked">…</mat-radio-button> from <div class="cdk-overlay-container">…</div> subtree intercepts pointer events
+  - retrying click action
+    - waiting 500ms
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+    - <mat-radio-button id="mat-radio-2" _ngcontent-ng-c3236668273="" class="mat-mdc-radio-button tile-radio-button mat-accent mat-mdc-radio-checked">…</mat-radio-button> from <div class="cdk-overlay-container">…</div> subtree intercepts pointer events
+  - retrying click action
+    - waiting 500ms
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+    - <p class="tile-description" _ngcontent-ng-c3236668273="">A rich, immersive experience that can unpack the …</p> from <div class="cdk-overlay-container">…</div> subtree intercepts pointer events
+  - retrying click action
+    - waiting 500ms
+
+
+2026-09-02 23:06:37,517 [ERROR] orchestrator - Workspace state preserved in: C:\Users\dell\.gemini\antigravity\scratch\youtube_pipeline\workspace
+2026-09-02 23:06:37,517 [ERROR] orchestrator - You can resume after fixing with: python orchestrator.py --stage 5
+2026-09-02 23:06:37,518 [ERROR] orchestrator - !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2026-09-02 23:08:48,738 [INFO] orchestrator - ======================================================================
+2026-09-02 23:08:48,738 [INFO] orchestrator - STARTING 13-AGENT PIPELINE (Stages 5 -> 13) | Dry-run: False
+2026-09-02 23:08:48,739 [INFO] orchestrator - ======================================================================
+2026-09-02 23:08:48,739 [INFO] orchestrator - 
+>>> EXECUTING STAGE 5: NotebookLM Feeder
+2026-09-02 23:08:48,741 [INFO] agent5_notebook_feeder - Agent 5 starting: Ingesting source & prompts into NotebookLM
+2026-09-02 23:08:48,741 [INFO] cdp_driver - Connecting to Chrome CDP at http://127.0.0.1:9222...
+2026-09-02 23:08:49,712 [INFO] cdp_driver - No matching tab found. Opening a new tab...
+2026-09-02 23:08:50,100 [INFO] cdp_driver - Navigating to https://notebooklm.google.com/...
+2026-09-02 23:08:51,338 [INFO] agent5_notebook_feeder - Connected to page: https://notebook.google.com/
+2026-09-02 23:08:51,718 [INFO] agent5_notebook_feeder - Waiting for NotebookLM dashboard to render...
+2026-09-02 23:08:55,741 [INFO] agent5_notebook_feeder - Locating and clicking 'New notebook' button...
+2026-09-02 23:08:56,006 [INFO] agent5_notebook_feeder - Successfully clicked 'New notebook'.
+2026-09-02 23:09:00,202 [INFO] agent5_notebook_feeder - Clicking 'Copied text' option...
+2026-09-02 23:09:03,315 [INFO] agent5_notebook_feeder - Targeting 'Paste text here' area...
+2026-09-02 23:09:03,354 [INFO] agent5_notebook_feeder - Pasting verified source text (12302 chars)...
+2026-09-02 23:09:05,885 [INFO] agent5_notebook_feeder - Clicking 'Insert' button...
+2026-09-02 23:09:05,980 [INFO] agent5_notebook_feeder - Successfully clicked 'Insert' button.
+2026-09-02 23:09:05,980 [INFO] agent5_notebook_feeder - Waiting 25 seconds for source ingestion & indexing...
+2026-09-02 23:09:30,994 [INFO] agent5_notebook_feeder - Targeting Video Overview in Studio panel...
+2026-09-02 23:09:31,132 [INFO] agent5_notebook_feeder - Clicked Video Overview card.
+2026-09-02 23:09:34,149 [INFO] agent5_notebook_feeder - Selecting 'Cinematic' overview format...
+2026-09-02 23:09:34,206 [INFO] agent5_notebook_feeder - Selected 'Cinematic' radio option.
+2026-09-02 23:09:35,216 [INFO] agent5_notebook_feeder - Injecting custom steering prompt into modal textarea...
+2026-09-02 23:09:35,401 [INFO] agent5_notebook_feeder - Successfully injected custom prompts.
+2026-09-02 23:09:36,908 [INFO] agent5_notebook_feeder - Clicking 'Generate' button inside modal...
+2026-09-02 23:09:37,069 [INFO] agent5_notebook_feeder - Successfully clicked 'Generate' button.
+2026-09-02 23:09:42,080 [INFO] agent5_notebook_feeder - Agent 5 completed: NotebookLM generation confirmed and queued.
+2026-09-02 23:09:42,081 [INFO] cdp_driver - Closing CDP connection (user Chrome remains running).
+2026-09-02 23:09:42,170 [INFO] orchestrator - <<< STAGE 5 (NotebookLM Feeder) COMPLETED SUCCESSFULLY.
+2026-09-02 23:09:42,170 [INFO] orchestrator - 
+>>> EXECUTING STAGE 6: Asset Harvester
+2026-09-02 23:09:42,170 [INFO] agent6_asset_harvester - Agent 6 starting: Asset Harvester (Initial wait: 1200s, Poll interval: 120s, Timeout: 4500s)
+2026-09-02 23:09:42,171 [INFO] agent6_asset_harvester - Starting initial silent wait of 1200 seconds (20.0 minutes)...
+2026-09-02 23:29:42,248 [INFO] cdp_driver - Connecting to Chrome CDP at http://127.0.0.1:9222...
+2026-09-02 23:32:44,579 [ERROR] orchestrator - !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2026-09-02 23:32:44,580 [ERROR] orchestrator - PIPELINE HALTED AT STAGE 6 (Asset Harvester): Failed to connect to Chrome over CDP at http://127.0.0.1:9222.
+Ensure Google Chrome is launched with remote debugging enabled:
+  chrome.exe --remote-debugging-port=9222 --user-data-dir="C:\Users\dell\AppData\Local\Google\Chrome\User Data"
+2026-09-02 23:32:44,581 [ERROR] orchestrator - TRACEBACK:
+2026-09-02 23:32:44,640 [ERROR] orchestrator - Traceback (most recent call last):
+  File "C:\Users\dell\.gemini\antigravity\scratch\youtube_pipeline\utils\cdp_driver.py", line 25, in get_cdp_session
+    browser = pw.chromium.connect_over_cdp(cdp_url)
+  File "C:\Users\dell\AppData\Roaming\Python\Python314\site-packages\playwright\sync_api\_generated.py", line 17126, in connect_over_cdp
+    self._sync(
+    ~~~~~~~~~~^
+        self._impl_obj.connect_over_cdp(
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+        )
+        ^
+    )
+    ^
+  File "C:\Users\dell\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\_sync_base.py", line 115, in _sync
+    return task.result()
+           ~~~~~~~~~~~^^
+  File "C:\Users\dell\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\_browser_type.py", line 205, in connect_over_cdp
+    response = await self._channel.send_return_as_dict(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        "connectOverCDP", TimeoutSettings.launch_timeout, params
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\dell\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\_connection.py", line 103, in send_return_as_dict
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\dell\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\_connection.py", line 632, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TimeoutError: BrowserType.connect_over_cdp: Timeout 180000ms exceeded.
+Call log:
+  - <ws preparing> retrieving websocket url from http://127.0.0.1:9222
+  - <ws connecting> ws://127.0.0.1:9222/devtools/browser/b83898bb-acad-4368-b6d3-e99987f2bde3
+  - <ws connected> ws://127.0.0.1:9222/devtools/browser/b83898bb-acad-4368-b6d3-e99987f2bde3
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\dell\.gemini\antigravity\scratch\youtube_pipeline\orchestrator.py", line 107, in run_pipeline
+    func(dry_run=dry_run)
+    ~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\dell\.gemini\antigravity\scratch\youtube_pipeline\agents\agent6_asset_harvester.py", line 71, in run_agent6
+    with get_cdp_session() as (context, page):
+         ~~~~~~~~~~~~~~~^^
+  File "C:\Program Files\Python314\Lib\contextlib.py", line 141, in __enter__
+    return next(self.gen)
+  File "C:\Users\dell\.gemini\antigravity\scratch\youtube_pipeline\utils\cdp_driver.py", line 27, in get_cdp_session
+    raise ConnectionError(
+    ...<3 lines>...
+    ) from e
+ConnectionError: Failed to connect to Chrome over CDP at http://127.0.0.1:9222.
+Ensure Google Chrome is launched with remote debugging enabled:
+  chrome.exe --remote-debugging-port=9222 --user-data-dir="C:\Users\dell\AppData\Local\Google\Chrome\User Data"
+
+2026-09-02 23:32:44,644 [ERROR] orchestrator - Workspace state preserved in: C:\Users\dell\.gemini\antigravity\scratch\youtube_pipeline\workspace
+2026-09-02 23:32:44,660 [ERROR] orchestrator - You can resume after fixing with: python orchestrator.py --stage 6
+2026-09-02 23:32:44,661 [ERROR] orchestrator - !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2026-09-02 23:45:21,252 [INFO] orchestrator - ======================================================================
+2026-09-02 23:45:21,253 [INFO] orchestrator - STARTING 13-AGENT PIPELINE (Stages 7 -> 13) | Dry-run: False
+2026-09-02 23:45:21,253 [INFO] orchestrator - ======================================================================
+2026-09-02 23:45:21,254 [INFO] orchestrator - 
+>>> EXECUTING STAGE 7: Transcriber & Outro Synthesizer
+2026-09-02 23:45:21,254 [INFO] agent7_transcriber_outro - Agent 7 starting: Transcribing C:\Users\dell\.gemini\antigravity\scratch\youtube_pipeline\workspace\06_raw_video.mp4
+2026-09-02 23:45:21,255 [INFO] agent7_transcriber_outro - Extracting audio: 06_raw_video.mp4 -> temp_extracted.wav
+2026-09-02 23:45:22,948 [INFO] agent7_transcriber_outro - Loading faster-whisper model ('base')...
+2026-09-02 23:45:24,635 [INFO] httpx - HTTP Request: GET https://huggingface.co/api/agent-harnesses "HTTP/1.1 200 OK"
+2026-09-02 23:45:24,884 [INFO] httpx - HTTP Request: GET https://huggingface.co/api/models/Systran/faster-whisper-base/revision/main "HTTP/1.1 200 OK"
+2026-09-02 23:45:25,182 [INFO] httpx - HTTP Request: GET https://huggingface.co/api/models/Systran/faster-whisper-base/tree/ebe41f70d5b6dfa9166e2c581c45c9c0cfc57b66?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-09-02 23:45:25,474 [INFO] httpx - HTTP Request: HEAD https://huggingface.co/Systran/faster-whisper-base/resolve/ebe41f70d5b6dfa9166e2c581c45c9c0cfc57b66/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-02 23:45:25,474 [WARNING] huggingface_hub.utils._http - Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-09-02 23:45:25,484 [INFO] httpx - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Systran/faster-whisper-base/ebe41f70d5b6dfa9166e2c581c45c9c0cfc57b66/config.json "HTTP/1.1 200 OK"
+2026-09-02 23:45:25,485 [INFO] httpx - HTTP Request: HEAD https://huggingface.co/Systran/faster-whisper-base/resolve/ebe41f70d5b6dfa9166e2c581c45c9c0cfc57b66/vocabulary.txt "HTTP/1.1 307 Temporary Redirect"
+2026-09-02 23:45:25,494 [INFO] httpx - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Systran/faster-whisper-base/ebe41f70d5b6dfa9166e2c581c45c9c0cfc57b66/vocabulary.txt "HTTP/1.1 200 OK"
+2026-09-02 23:45:25,500 [INFO] httpx - HTTP Request: GET https://huggingface.co/api/resolve-cache/models/Systran/faster-whisper-base/ebe41f70d5b6dfa9166e2c581c45c9c0cfc57b66/config.json "HTTP/1.1 200 OK"
+2026-09-02 23:45:25,504 [INFO] httpx - HTTP Request: HEAD https://huggingface.co/Systran/faster-whisper-base/resolve/ebe41f70d5b6dfa9166e2c581c45c9c0cfc57b66/tokenizer.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-02 23:45:25,518 [INFO] httpx - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Systran/faster-whisper-base/ebe41f70d5b6dfa9166e2c581c45c9c0cfc57b66/tokenizer.json "HTTP/1.1 200 OK"
+2026-09-02 23:45:25,519 [INFO] httpx - HTTP Request: GET https://huggingface.co/api/resolve-cache/models/Systran/faster-whisper-base/ebe41f70d5b6dfa9166e2c581c45c9c0cfc57b66/vocabulary.txt "HTTP/1.1 200 OK"
+2026-09-02 23:45:25,540 [INFO] httpx - HTTP Request: GET https://huggingface.co/api/resolve-cache/models/Systran/faster-whisper-base/ebe41f70d5b6dfa9166e2c581c45c9c0cfc57b66/tokenizer.json "HTTP/1.1 200 OK"
+2026-09-02 23:45:25,546 [INFO] httpx - HTTP Request: GET https://huggingface.co/api/models/Systran/faster-whisper-base/xet-read-token/ebe41f70d5b6dfa9166e2c581c45c9c0cfc57b66 "HTTP/1.1 200 OK"
+2026-09-02 23:45:45,128 [INFO] faster_whisper - Processing audio with duration 05:40.822
+2026-09-02 23:45:48,700 [INFO] faster_whisper - Detected language 'en' with probability 1.00
+2026-09-02 23:46:48,880 [INFO] agent7_transcriber_outro - faster-whisper transcription completed: 79 segments.
+2026-09-02 23:46:48,891 [INFO] agent7_transcriber_outro - Transcript saved -> C:\Users\dell\.gemini\antigravity\scratch\youtube_pipeline\workspace\07_transcript.json
+2026-09-02 23:46:52,649 [INFO] httpx2 - HTTP Request: POST https://tabitoken.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-02 23:46:58,699 [INFO] agent7_transcriber_outro - Outro script synthesized -> C:\Users\dell\.gemini\antigravity\scratch\youtube_pipeline\workspace\07_outro.json
+2026-09-02 23:46:58,728 [INFO] orchestrator - <<< STAGE 7 (Transcriber & Outro Synthesizer) COMPLETED SUCCESSFULLY.
+2026-09-02 23:46:58,729 [INFO] orchestrator - 
+>>> EXECUTING STAGE 8: Voice Transformer & Splicer
+2026-09-02 23:46:58,729 [INFO] agent8_voice_transformer - Agent 8 starting: Voice Transformer & Splicer
+2026-09-02 23:46:58,730 [INFO] agent8_voice_transformer - Extracting audio from 06_raw_video.mp4 -> 08_raw_audio.wav
+2026-09-02 23:46:59,757 [INFO] agent8_voice_transformer - Seed-VC / RVC CLI not specified in .env. Applying broadcast studio EQ & voice enhancement fallback.
+2026-09-02 23:47:05,022 [INFO] agent8_voice_transformer - Synthesizing outro audio using Edge-TTS voice 'en-US-ChristopherNeural'...
+2026-09-02 23:47:05,051 [WARNING] agent8_voice_transformer - edge-tts synthesis failed ([WinError 2] The system cannot find the file specified). Generating tone outro fallback.
+2026-09-02 23:47:05,834 [INFO] agent8_voice_transformer - Muxing voiced video -> C:\Users\dell\.gemini\antigravity\scratch\youtube_pipeline\workspace\08_voiced_video.mp4
+2026-09-02 23:47:11,771 [INFO] agent8_voice_transformer - Agent 8 completed: Voiced video created -> C:\Users\dell\.gemini\antigravity\scratch\youtube_pipeline\workspace\08_voiced_video.mp4
+2026-09-02 23:47:11,771 [INFO] orchestrator - <<< STAGE 8 (Voice Transformer & Splicer) COMPLETED SUCCESSFULLY.
+2026-09-02 23:47:11,771 [INFO] orchestrator - 
+>>> EXECUTING STAGE 9: Subtitle & Dynamic Editor
+2026-09-02 23:47:11,772 [INFO] agent9_subtitle_editor - Agent 9 starting: Subtitle & Dynamic Editor
+2026-09-02 23:47:11,785 [INFO] agent9_subtitle_editor - ASS Subtitles generated -> C:\Users\dell\.gemini\antigravity\scratch\youtube_pipeline\workspace\09_subtitles.ass
+2026-09-02 23:47:11,787 [INFO] agent9_subtitle_editor - Burning subtitles via FFmpeg libass into final video...
+2026-09-02 23:48:45,636 [INFO] agent9_subtitle_editor - Agent 9 completed: Final video ready (111.47 MB) -> C:\Users\dell\.gemini\antigravity\scratch\youtube_pipeline\workspace\09_final_video.mp4
+2026-09-02 23:48:45,638 [INFO] orchestrator - <<< STAGE 9 (Subtitle & Dynamic Editor) COMPLETED SUCCESSFULLY.
+2026-09-02 23:48:45,638 [INFO] orchestrator - 
+>>> EXECUTING STAGE 10: SEO & Packaging Packager
+2026-09-02 23:48:45,639 [INFO] agent10_seo_packager - Agent 10 starting: Generating SEO metadata
+2026-09-02 23:48:47,220 [INFO] httpx2 - HTTP Request: POST https://tabitoken.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-02 23:49:06,939 [INFO] agent10_seo_packager - Agent 10 completed: Metadata saved -> C:\Users\dell\.gemini\antigravity\scratch\youtube_pipeline\workspace\10_metadata.json
+2026-09-02 23:49:06,940 [INFO] orchestrator - <<< STAGE 10 (SEO & Packaging Packager) COMPLETED SUCCESSFULLY.
+2026-09-02 23:49:06,940 [INFO] orchestrator - 
+>>> EXECUTING STAGE 11: Thumbnail Engine
+2026-09-02 23:49:06,941 [INFO] agent11_thumbnail_generator - Agent 11 starting: Generating high-CTR thumbnail asset
+2026-09-02 23:49:07,188 [INFO] agent11_thumbnail_generator - Agent 11 completed: Thumbnail generated -> C:\Users\dell\.gemini\antigravity\scratch\youtube_pipeline\workspace\11_thumbnail.png
+2026-09-02 23:49:07,190 [INFO] orchestrator - <<< STAGE 11 (Thumbnail Engine) COMPLETED SUCCESSFULLY.
+2026-09-02 23:49:07,190 [INFO] orchestrator - 
+>>> EXECUTING STAGE 12: Production Asset Bundler
+2026-09-02 23:49:07,190 [INFO] agent12_asset_bundler - Agent 12 starting: Bundling run assets
+2026-09-02 23:49:07,525 [INFO] agent12_asset_bundler - Archiving assets to C:\Users\dell\.gemini\antigravity\scratch\youtube_pipeline\runs\20260902_234907_south_korea_broke_population_math_100_gr...
+2026-09-02 23:49:07,799 [INFO] agent12_asset_bundler - Agent 12 completed: Manifest created -> C:\Users\dell\.gemini\antigravity\scratch\youtube_pipeline\workspace\12_manifest.json, Archived to -> C:\Users\dell\.gemini\antigravity\scratch\youtube_pipeline\runs\20260902_234907_south_korea_broke_population_math_100_gr
+2026-09-02 23:49:07,800 [INFO] orchestrator - <<< STAGE 12 (Production Asset Bundler) COMPLETED SUCCESSFULLY.
+2026-09-02 23:49:07,800 [INFO] orchestrator - 
+>>> EXECUTING STAGE 13: YouTube Publisher
+2026-09-02 23:49:07,800 [INFO] agent13_youtube_publisher - Agent 13 starting: YouTube Publishing & Scheduling
+2026-09-02 23:49:07,802 [WARNING] agent13_youtube_publisher - YouTube client_secrets.json not found at C:\Users\dell\.gemini\antigravity\scratch\youtube_pipeline\config\client_secrets.json. Running in SIMULATED / DRY-RUN mode.
+2026-09-02 23:49:07,802 [INFO] agent13_youtube_publisher - Agent 13 (Simulated): {
+  "status": "SIMULATED_SUCCESS",
+  "video_id": "SIMULATED_VID_DATA_89330901",
+  "url": "https://youtu.be/SIMULATED_VID_DATA_89330901",
+  "title": "South Korea Broke Population Math: 100 Grandparents, Only 4 Great-Grandkids",
+  "category_id": "28",
+  "privacy_status": "private",
+  "thumbnail": "C:\\Users\\dell\\.gemini\\antigravity\\scratch\\youtube_pipeline\\workspace\\11_thumbnail.png",
+  "note": "To publish live to YouTube, place OAuth credentials at C:\\Users\\dell\\.gemini\\antigravity\\scratch\\youtube_pipeline\\config\\client_secrets.json"
+}
+2026-09-02 23:49:07,803 [INFO] orchestrator - <<< STAGE 13 (YouTube Publisher) COMPLETED SUCCESSFULLY.
+2026-09-02 23:49:07,803 [INFO] orchestrator - ======================================================================
+2026-09-02 23:49:07,803 [INFO] orchestrator - PIPELINE RUN COMPLETED SUCCESSFULLY in 0:03:46
+2026-09-02 23:49:07,803 [INFO] orchestrator - ======================================================================
+2026-09-02 23:58:26,983 [INFO] orchestrator - ======================================================================
+2026-09-02 23:58:26,985 [INFO] orchestrator - STARTING 13-AGENT PIPELINE (Stages 8 -> 13) | Dry-run: False
+2026-09-02 23:58:26,985 [INFO] orchestrator - ======================================================================
+2026-09-02 23:58:26,985 [INFO] orchestrator - 
+>>> EXECUTING STAGE 8: Voice Transformer & Splicer
+2026-09-02 23:58:26,985 [INFO] agent8_voice_transformer - Agent 8 starting: Voice Transformer & Splicer
+2026-09-02 23:58:26,988 [INFO] agent8_voice_transformer - Extracting audio from 06_raw_video.mp4 -> 08_raw_audio.wav
+2026-09-02 23:58:28,227 [INFO] agent8_voice_transformer - Seed-VC / RVC CLI not specified in .env. Applying broadcast studio EQ & voice enhancement fallback.
+2026-09-02 23:58:34,243 [INFO] agent8_voice_transformer - Synthesizing outro audio using Edge-TTS voice 'en-US-ChristopherNeural'...
+2026-09-02 23:58:34,272 [WARNING] agent8_voice_transformer - edge-tts synthesis failed ([WinError 2] The system cannot find the file specified). Generating tone outro fallback.
+2026-09-02 23:58:35,091 [INFO] agent8_voice_transformer - Muxing voiced video -> C:\Users\dell\.gemini\antigravity\scratch\youtube_pipeline\workspace\08_voiced_video.mp4
+2026-09-02 23:58:43,281 [INFO] agent8_voice_transformer - Agent 8 completed: Voiced video created -> C:\Users\dell\.gemini\antigravity\scratch\youtube_pipeline\workspace\08_voiced_video.mp4
+2026-09-02 23:58:43,281 [INFO] orchestrator - <<< STAGE 8 (Voice Transformer & Splicer) COMPLETED SUCCESSFULLY.
+2026-09-02 23:58:43,282 [INFO] orchestrator - 
+>>> EXECUTING STAGE 9: Subtitle & Dynamic Editor
+2026-09-02 23:58:43,282 [INFO] agent9_subtitle_editor - Agent 9 starting: Subtitle & Dynamic Editor
+2026-09-02 23:58:43,299 [INFO] agent9_subtitle_editor - ASS Subtitles generated -> C:\Users\dell\.gemini\antigravity\scratch\youtube_pipeline\workspace\09_subtitles.ass
+2026-09-02 23:58:43,300 [INFO] agent9_subtitle_editor - Burning subtitles via FFmpeg libass into final video...
+2026-09-03 00:00:48,743 [INFO] agent9_subtitle_editor - Agent 9 completed: Final video ready (111.47 MB) -> C:\Users\dell\.gemini\antigravity\scratch\youtube_pipeline\workspace\09_final_video.mp4
+2026-09-03 00:00:48,744 [INFO] orchestrator - <<< STAGE 9 (Subtitle & Dynamic Editor) COMPLETED SUCCESSFULLY.
+2026-09-03 00:00:48,745 [INFO] orchestrator - 
+>>> EXECUTING STAGE 10: SEO & Packaging Packager
+2026-09-03 00:00:48,745 [INFO] agent10_seo_packager - Agent 10 starting: Generating SEO metadata
+2026-09-03 00:00:54,504 [INFO] httpx2 - HTTP Request: POST https://tabitoken.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-03 00:01:24,361 [INFO] agent10_seo_packager - Agent 10 completed: Metadata saved -> C:\Users\dell\.gemini\antigravity\scratch\youtube_pipeline\workspace\10_metadata.json
+2026-09-03 00:01:24,362 [INFO] orchestrator - <<< STAGE 10 (SEO & Packaging Packager) COMPLETED SUCCESSFULLY.
+2026-09-03 00:01:24,364 [INFO] orchestrator - 
+>>> EXECUTING STAGE 11: Thumbnail Engine
+2026-09-03 00:01:24,364 [INFO] agent11_thumbnail_generator - Agent 11 starting: Generating high-CTR thumbnail asset
+2026-09-03 00:01:25,198 [INFO] agent11_thumbnail_generator - Agent 11 completed: Thumbnail generated -> C:\Users\dell\.gemini\antigravity\scratch\youtube_pipeline\workspace\11_thumbnail.png
+2026-09-03 00:01:25,201 [INFO] orchestrator - <<< STAGE 11 (Thumbnail Engine) COMPLETED SUCCESSFULLY.
+2026-09-03 00:01:25,202 [INFO] orchestrator - 
+>>> EXECUTING STAGE 12: Production Asset Bundler
+2026-09-03 00:01:25,203 [INFO] agent12_asset_bundler - Agent 12 starting: Bundling run assets
+2026-09-03 00:01:25,901 [INFO] agent12_asset_bundler - Archiving assets to C:\Users\dell\.gemini\antigravity\scratch\youtube_pipeline\runs\20260903_000125_south_korea_broke_population_math_100_gr...

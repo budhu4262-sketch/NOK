@@ -1,0 +1,86 @@
+{
+  "timestamp": "20260903_011811",
+  "topic_slug": "youre_in_the_global_1_why_doesnt_it_feel",
+  "archive_directory": "C:\\Users\\dell\\.gemini\\antigravity\\scratch\\youtube_pipeline\\runs\\20260903_011811_youre_in_the_global_1_why_doesnt_it_feel",
+  "total_artifacts": 11,
+  "artifacts": {
+    "topic": {
+      "filename": "01_topic.json",
+      "size_bytes": 21949,
+      "size_mb": 0.02,
+      "sha256": "771a93a155806b86a45d22e98bceb57494776d33694fe1b0d4a0250bc9568303",
+      "status": "VALID"
+    },
+    "source": {
+      "filename": "02_source.txt",
+      "size_bytes": 13626,
+      "size_mb": 0.01,
+      "sha256": "ece72d02e730516267e0ea6d390a3906ea2ffa9f8101166f207d38344aff84f3",
+      "status": "VALID"
+    },
+    "verified_source": {
+      "filename": "03_verified_source.txt",
+      "size_bytes": 29845,
+      "size_mb": 0.03,
+      "sha256": "ec93203d8c1928a42c015cb8fae3b2aaae06d75adc4c415af199de8230e575b2",
+      "status": "VALID"
+    },
+    "notebook_prompts": {
+      "filename": "04_notebook_prompts.json",
+      "size_bytes": 1450,
+      "size_mb": 0.0,
+      "sha256": "d6bee96a4f6521e89b628234d52b292db80f650de7670fd459b08955a9db243c",
+      "status": "VALID"
+    },
+    "raw_video": {
+      "filename": "06_raw_video.mp4",
+      "size_bytes": 93420096,
+      "size_mb": 89.09,
+      "sha256": "c96a13cc39ca9b408115d7c1c66351bb850f4785310dcc6f6a5ea82bb093935d",
+      "status": "VALID"
+    },
+    "transcript": {
+      "filename": "07_transcript.json",
+      "size_bytes": 6219,
+      "size_mb": 0.01,
+      "sha256": "208cdbcad669b034563f6070361640af1002edf762b06acfeab07a2e4035881e",
+      "status": "VALID"
+    },
+    "outro": {
+      "filename": "07_outro.json",
+      "size_bytes": 394,
+      "size_mb": 0.0,
+      "sha256": "c90d19bca1aed7db74f3d40eafc05e77dcb006b55e3b3eecee7297cd2b04af9e",
+      "status": "VALID"
+    },
+    "voiced_video": {
+      "filename": "08_voiced_video.mp4",
+      "size_bytes": 97609380,
+      "size_mb": 93.09,
+      "sha256": "48bbf662326945889de22e6dc3365f17b8d578464427f5a31a9be6379fc0940d",
+      "status": "VALID"
+    },
+    "final_video": {
+      "filename": "09_final_video.mp4",
+      "size_bytes": 115040885,
+      "size_mb": 109.71,
+      "sha256": "e07f677a9c722a6549078b5befceb6ebbaeb2af588c5028e04b56f49fc041ee8",
+      "status": "VALID"
+    },
+    "metadata": {
+      "filename": "10_metadata.json",
+      "size_bytes": 4754,
+      "size_mb": 0.0,
+      "sha256": "5d23639a028d10880f0812add9e909c2f4ef5750dbb205074cbc9b1596a0238f",
+      "status": "VALID"
+    },
+    "thumbnail": {
+      "filename": "11_thumbnail.png",
+      "size_bytes": 38898,
+      "size_mb": 0.04,
+      "sha256": "00ef8df52943b3f7643de5009c33bffdc214c296a63af314da94018cb2ba0226",
+      "status": "VALID"
+    }
+  },
+  "ready_for_publishing": true
+}

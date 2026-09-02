@@ -1,0 +1,23 @@
+{
+  "niche": "Data Visualization & Global Statistics",
+  "concepts": [
+    {
+      "id": 1,
+      "title": "The 2026 Wealth Inversion",
+      "hook": "For 40 years, this line went straight up. In 2026, it violently broke.",
+      "core_data_shift": "Global sovereign debt yield inversion vs emerging wealth velocity",
+      "visual_concept": "Dual neon area chart with dramatic sudden divergence point",
+      "retention_score": 96,
+      "rationale": "Directly contradicts popular macroeconomic consensus with visual proof."
+    }
+  ],
+  "selected_concept": {
+    "id": 1,
+    "title": "The 2026 Wealth Inversion",
+    "hook": "For 40 years, this line went straight up. In 2026, it violently broke.",
+    "core_data_shift": "Global sovereign debt yield inversion vs emerging wealth velocity",
+    "visual_concept": "Dual neon area chart with dramatic sudden divergence point",
+    "retention_score": 96,
+    "rationale": "Directly contradicts popular macroeconomic consensus with visual proof."
+  }
+}

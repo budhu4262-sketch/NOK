@@ -1,0 +1,83 @@
+{
+  "timestamp": "20260903_015918",
+  "topic_slug": "youre_in_the_global_1_why_doesnt_it_feel",
+  "archive_directory": "C:\\Users\\dell\\.gemini\\antigravity\\scratch\\youtube_pipeline\\runs\\20260903_015918_youre_in_the_global_1_why_doesnt_it_feel",
+  "total_artifacts": 10,
+  "artifacts": {
+    "topic": {
+      "filename": "01_topic.json",
+      "size_bytes": 21949,
+      "size_mb": 0.02,
+      "sha256": "771a93a155806b86a45d22e98bceb57494776d33694fe1b0d4a0250bc9568303",
+      "status": "VALID"
+    },
+    "source": {
+      "filename": "02_source.txt",
+      "size_bytes": 13626,
+      "size_mb": 0.01,
+      "sha256": "ece72d02e730516267e0ea6d390a3906ea2ffa9f8101166f207d38344aff84f3",
+      "status": "VALID"
+    },
+    "verified_source": {
+      "filename": "03_verified_source.txt",
+      "size_bytes": 29845,
+      "size_mb": 0.03,
+      "sha256": "ec93203d8c1928a42c015cb8fae3b2aaae06d75adc4c415af199de8230e575b2",
+      "status": "VALID"
+    },
+    "notebook_prompts": {
+      "filename": "04_notebook_prompts.json",
+      "size_bytes": 1450,
+      "size_mb": 0.0,
+      "sha256": "d6bee96a4f6521e89b628234d52b292db80f650de7670fd459b08955a9db243c",
+      "status": "VALID"
+    },
+    "raw_video": {
+      "status": "MISSING",
+      "is_critical": false
+    },
+    "transcript": {
+      "filename": "07_transcript.json",
+      "size_bytes": 6219,
+      "size_mb": 0.01,
+      "sha256": "208cdbcad669b034563f6070361640af1002edf762b06acfeab07a2e4035881e",
+      "status": "VALID"
+    },
+    "outro": {
+      "filename": "07_outro.json",
+      "size_bytes": 394,
+      "size_mb": 0.0,
+      "sha256": "c90d19bca1aed7db74f3d40eafc05e77dcb006b55e3b3eecee7297cd2b04af9e",
+      "status": "VALID"
+    },
+    "voiced_video": {
+      "filename": "08_voiced_video.mp4",
+      "size_bytes": 135720,
+      "size_mb": 0.13,
+      "sha256": "638b71bde6a3e65286da88c652d75e2aac8f9a34bce6b0f3786570d06c2c336d",
+      "status": "VALID"
+    },
+    "final_video": {
+      "filename": "09_final_video.mp4",
+      "size_bytes": 116790616,
+      "size_mb": 111.38,
+      "sha256": "4e66e09c37c5105343604f729458dc91a71749329a36e4b4074dc6e2571dda6c",
+      "status": "VALID"
+    },
+    "metadata": {
+      "filename": "10_metadata.json",
+      "size_bytes": 2598,
+      "size_mb": 0.0,
+      "sha256": "451f7c9508d6e5a82b47d3711687be407db3bd5cc12aebaab1a443529f6bc1b1",
+      "status": "VALID"
+    },
+    "thumbnail": {
+      "filename": "11_thumbnail.png",
+      "size_bytes": 109125,
+      "size_mb": 0.1,
+      "sha256": "ace7cb1e9b28556967adef087a16f5a3150c2456f195365ccfa00194c781a08d",
+      "status": "VALID"
+    }
+  },
+  "ready_for_publishing": true
+}

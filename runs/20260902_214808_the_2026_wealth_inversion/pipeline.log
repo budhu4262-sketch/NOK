@@ -1,0 +1,80 @@
+2026-09-02 21:48:00,089 [INFO] orchestrator - ======================================================================
+2026-09-02 21:48:00,091 [INFO] orchestrator - STARTING 13-AGENT PIPELINE (Stages 1 -> 13) | Dry-run: True
+2026-09-02 21:48:00,091 [INFO] orchestrator - ======================================================================
+2026-09-02 21:48:00,091 [INFO] orchestrator - 
+>>> EXECUTING STAGE 1: Trend Scout
+2026-09-02 21:48:00,092 [INFO] agent1_trend_scout - Agent 1 starting: Scouting viral concepts for niche: Data Visualization & Global Statistics
+2026-09-02 21:48:00,093 [WARNING] tabi_client - TABI_API_KEY is not set. Generating synthetic response for testing/dry-run mode.
+2026-09-02 21:48:00,096 [INFO] agent1_trend_scout - Agent 1 completed: Selected topic 'The 2026 Wealth Inversion' -> C:\Users\dell\.gemini\antigravity\scratch\youtube_pipeline\workspace\01_topic.json
+2026-09-02 21:48:00,097 [INFO] orchestrator - <<< STAGE 1 (Trend Scout) COMPLETED SUCCESSFULLY.
+2026-09-02 21:48:00,098 [INFO] orchestrator - 
+>>> EXECUTING STAGE 2: Source Writer
+2026-09-02 21:48:00,098 [INFO] agent2_source_writer - Agent 2 starting: Reading topic from C:\Users\dell\.gemini\antigravity\scratch\youtube_pipeline\workspace\01_topic.json
+2026-09-02 21:48:00,100 [WARNING] tabi_client - TABI_API_KEY is not set. Generating synthetic response for testing/dry-run mode.
+2026-09-02 21:48:00,103 [INFO] agent2_source_writer - Agent 2 completed: Generated 187 words -> C:\Users\dell\.gemini\antigravity\scratch\youtube_pipeline\workspace\02_source.txt
+2026-09-02 21:48:00,104 [INFO] orchestrator - <<< STAGE 2 (Source Writer) COMPLETED SUCCESSFULLY.
+2026-09-02 21:48:00,104 [INFO] orchestrator - 
+>>> EXECUTING STAGE 3: Fact & Ingestion Verifier
+2026-09-02 21:48:00,104 [INFO] agent3_fact_verifier - Agent 3 starting: Verifying source text from C:\Users\dell\.gemini\antigravity\scratch\youtube_pipeline\workspace\02_source.txt
+2026-09-02 21:48:00,105 [WARNING] tabi_client - TABI_API_KEY is not set. Generating synthetic response for testing/dry-run mode.
+2026-09-02 21:48:00,107 [INFO] agent3_fact_verifier - Agent 3 completed: Verified source saved -> C:\Users\dell\.gemini\antigravity\scratch\youtube_pipeline\workspace\03_verified_source.txt
+2026-09-02 21:48:00,108 [INFO] orchestrator - <<< STAGE 3 (Fact & Ingestion Verifier) COMPLETED SUCCESSFULLY.
+2026-09-02 21:48:00,108 [INFO] orchestrator - 
+>>> EXECUTING STAGE 4: Prompt Synthesizer
+2026-09-02 21:48:00,108 [INFO] agent4_prompt_synthesizer - Agent 4 starting: Reading verified source from C:\Users\dell\.gemini\antigravity\scratch\youtube_pipeline\workspace\03_verified_source.txt
+2026-09-02 21:48:00,109 [WARNING] tabi_client - TABI_API_KEY is not set. Generating synthetic response for testing/dry-run mode.
+2026-09-02 21:48:00,113 [INFO] agent4_prompt_synthesizer - Agent 4 completed: Prompts synthesized -> C:\Users\dell\.gemini\antigravity\scratch\youtube_pipeline\workspace\04_notebook_prompts.json
+2026-09-02 21:48:00,113 [INFO] orchestrator - <<< STAGE 4 (Prompt Synthesizer) COMPLETED SUCCESSFULLY.
+2026-09-02 21:48:00,113 [INFO] orchestrator - 
+>>> EXECUTING STAGE 5: NotebookLM Feeder
+2026-09-02 21:48:00,113 [INFO] agent5_notebook_feeder - Agent 5 starting: Ingesting source & prompts into NotebookLM
+2026-09-02 21:48:00,114 [INFO] agent5_notebook_feeder - [DRY-RUN] Simulating NotebookLM ingestion...
+2026-09-02 21:48:00,115 [INFO] orchestrator - <<< STAGE 5 (NotebookLM Feeder) COMPLETED SUCCESSFULLY.
+2026-09-02 21:48:00,115 [INFO] orchestrator - 
+>>> EXECUTING STAGE 6: Asset Harvester
+2026-09-02 21:48:00,115 [INFO] agent6_asset_harvester - Agent 6 starting: Asset Harvester (Initial wait: 1200s, Poll interval: 120s, Timeout: 4500s)
+2026-09-02 21:48:00,115 [INFO] agent6_asset_harvester - [DRY-RUN] Creating synthetic raw video asset for pipeline testing...
+2026-09-02 21:48:03,062 [INFO] agent6_asset_harvester - [DRY-RUN] Synthetic video created: C:\Users\dell\.gemini\antigravity\scratch\youtube_pipeline\workspace\06_raw_video.mp4
+2026-09-02 21:48:03,062 [INFO] orchestrator - <<< STAGE 6 (Asset Harvester) COMPLETED SUCCESSFULLY.
+2026-09-02 21:48:03,063 [INFO] orchestrator - 
+>>> EXECUTING STAGE 7: Transcriber & Outro Synthesizer
+2026-09-02 21:48:03,063 [INFO] agent7_transcriber_outro - Agent 7 starting: Transcribing C:\Users\dell\.gemini\antigravity\scratch\youtube_pipeline\workspace\06_raw_video.mp4
+2026-09-02 21:48:03,064 [INFO] agent7_transcriber_outro - Extracting audio: 06_raw_video.mp4 -> temp_extracted.wav
+2026-09-02 21:48:03,316 [WARNING] agent7_transcriber_outro - faster-whisper transcription unavailable or failed (No module named 'faster_whisper'). Using fallback audio analysis.
+2026-09-02 21:48:03,317 [INFO] agent7_transcriber_outro - Generating fallback transcript structure...
+2026-09-02 21:48:03,322 [INFO] agent7_transcriber_outro - Transcript saved -> C:\Users\dell\.gemini\antigravity\scratch\youtube_pipeline\workspace\07_transcript.json
+2026-09-02 21:48:03,323 [WARNING] tabi_client - TABI_API_KEY is not set. Generating synthetic response for testing/dry-run mode.
+2026-09-02 21:48:03,328 [INFO] agent7_transcriber_outro - Outro script synthesized -> C:\Users\dell\.gemini\antigravity\scratch\youtube_pipeline\workspace\07_outro.json
+2026-09-02 21:48:03,330 [INFO] orchestrator - <<< STAGE 7 (Transcriber & Outro Synthesizer) COMPLETED SUCCESSFULLY.
+2026-09-02 21:48:03,331 [INFO] orchestrator - 
+>>> EXECUTING STAGE 8: Voice Transformer & Splicer
+2026-09-02 21:48:03,331 [INFO] agent8_voice_transformer - Agent 8 starting: Voice Transformer & Splicer
+2026-09-02 21:48:03,332 [INFO] agent8_voice_transformer - Extracting audio from 06_raw_video.mp4 -> 08_raw_audio.wav
+2026-09-02 21:48:03,552 [INFO] agent8_voice_transformer - Seed-VC / RVC CLI not specified in .env. Applying broadcast studio EQ & voice enhancement fallback.
+2026-09-02 21:48:03,949 [INFO] agent8_voice_transformer - Synthesizing outro audio using Edge-TTS voice 'en-US-ChristopherNeural'...
+2026-09-02 21:48:04,022 [WARNING] agent8_voice_transformer - edge-tts synthesis failed ([WinError 2] The system cannot find the file specified). Generating tone outro fallback.
+2026-09-02 21:48:04,504 [INFO] agent8_voice_transformer - Muxing voiced video -> C:\Users\dell\.gemini\antigravity\scratch\youtube_pipeline\workspace\08_voiced_video.mp4
+2026-09-02 21:48:05,059 [INFO] agent8_voice_transformer - Agent 8 completed: Voiced video created -> C:\Users\dell\.gemini\antigravity\scratch\youtube_pipeline\workspace\08_voiced_video.mp4
+2026-09-02 21:48:05,060 [INFO] orchestrator - <<< STAGE 8 (Voice Transformer & Splicer) COMPLETED SUCCESSFULLY.
+2026-09-02 21:48:05,060 [INFO] orchestrator - 
+>>> EXECUTING STAGE 9: Subtitle & Dynamic Editor
+2026-09-02 21:48:05,060 [INFO] agent9_subtitle_editor - Agent 9 starting: Subtitle & Dynamic Editor
+2026-09-02 21:48:05,064 [INFO] agent9_subtitle_editor - ASS Subtitles generated -> C:\Users\dell\.gemini\antigravity\scratch\youtube_pipeline\workspace\09_subtitles.ass
+2026-09-02 21:48:05,065 [INFO] agent9_subtitle_editor - Burning subtitles via FFmpeg libass into final video...
+2026-09-02 21:48:07,795 [INFO] agent9_subtitle_editor - Agent 9 completed: Final video ready (0.17 MB) -> C:\Users\dell\.gemini\antigravity\scratch\youtube_pipeline\workspace\09_final_video.mp4
+2026-09-02 21:48:07,796 [INFO] orchestrator - <<< STAGE 9 (Subtitle & Dynamic Editor) COMPLETED SUCCESSFULLY.
+2026-09-02 21:48:07,796 [INFO] orchestrator - 
+>>> EXECUTING STAGE 10: SEO & Packaging Packager
+2026-09-02 21:48:07,797 [INFO] agent10_seo_packager - Agent 10 starting: Generating SEO metadata
+2026-09-02 21:48:07,800 [WARNING] tabi_client - TABI_API_KEY is not set. Generating synthetic response for testing/dry-run mode.
+2026-09-02 21:48:07,807 [INFO] agent10_seo_packager - Agent 10 completed: Metadata saved -> C:\Users\dell\.gemini\antigravity\scratch\youtube_pipeline\workspace\10_metadata.json
+2026-09-02 21:48:07,807 [INFO] orchestrator - <<< STAGE 10 (SEO & Packaging Packager) COMPLETED SUCCESSFULLY.
+2026-09-02 21:48:07,807 [INFO] orchestrator - 
+>>> EXECUTING STAGE 11: Thumbnail Engine
+2026-09-02 21:48:07,808 [INFO] agent11_thumbnail_generator - Agent 11 starting: Generating high-CTR thumbnail asset
+2026-09-02 21:48:08,562 [INFO] agent11_thumbnail_generator - Agent 11 completed: Thumbnail generated -> C:\Users\dell\.gemini\antigravity\scratch\youtube_pipeline\workspace\11_thumbnail.png
+2026-09-02 21:48:08,564 [INFO] orchestrator - <<< STAGE 11 (Thumbnail Engine) COMPLETED SUCCESSFULLY.
+2026-09-02 21:48:08,564 [INFO] orchestrator - 
+>>> EXECUTING STAGE 12: Production Asset Bundler
+2026-09-02 21:48:08,564 [INFO] agent12_asset_bundler - Agent 12 starting: Bundling run assets
+2026-09-02 21:48:08,580 [INFO] agent12_asset_bundler - Archiving assets to C:\Users\dell\.gemini\antigravity\scratch\youtube_pipeline\runs\20260902_214808_the_2026_wealth_inversion...

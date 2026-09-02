@@ -1,0 +1,27 @@
+{
+  "titles": [
+    "South Korea Broke Population Math: 100 Grandparents, Only 4 Great-Grandkids",
+    "0.72 Sounds Like Nothing. It Erases 95% of a Nation in 100 Years.",
+    "Why Korea's Birth Rate Isn't a Korea Problem: Japan, Italy, China and the US Are 15 Years Behind"
+  ],
+  "primary_title": "South Korea Broke Population Math: 100 Grandparents, Only 4 Great-Grandkids",
+  "description": "South Korea's fertility rate is 0.72 \u2014 a decimal so small it sounds like a rounding error. Run it forward three generations and 100 grandparents leave behind fewer than 5 great-grandchildren, a 95.3% contraction with no war, no famine, and no plague.\n\nThis is the arithmetic almost nobody does out loud. Below the 2.1 replacement rate, population math stops behaving like slow decline and starts behaving like reverse compound interest \u2014 and Korea just happens to be the first country to reach the part of the curve everyone else is already on.\n\n\u23f1\ufe0f CHAPTERS\n00:00 \u2014 Introduction & The Intuition Trap\n01:24 \u2014 The Historical Inflection Point\n03:05 \u2014 The Data Divergence\n04:46 \u2014 The 2030 Horizon & Conclusion\n\n\ud83d\udcca KEY STATISTICAL TAKEAWAYS\n\u2022 Korea's total fertility rate fell from 4.53 (1970) to 0.72 (2023), rebounding only slightly to roughly 0.75 in 2024 \u2014 with Seoul near 0.55, against a replacement rate of 2.1. In 2018 Korea became the first nation in peacetime history to fall below 1.0 with no war, famine, or plague.\n\u2022 Statistics Korea's medium projection takes the population from its 51.8M peak down to roughly 36M by 2072, cuts the working-age cohort roughly in half, and pushes the median age from about 45 to the low 60s \u2014 collapsing the worker-to-retiree ratio from 5:1 toward 1:1.\n\u2022 Korea is not an outlier, it's the front of the curve: Japan crossed 1.3 in 2005, Italy hit a record-low ~1.18 in 2024, China fell to roughly 1.0\u20131.1 as annual births halved from 18.8M (2016) to about 9.5M (2024), and the US recorded a record-low ~1.6. Every one of those lines is already below 2.1.\n\n\ud83d\udd0d SOURCES & METHODOLOGY\n\u2022 Statistics Korea (KOSTAT) \u2014 Birth Statistics and Population Projections for Korea, medium-variant scenario (2072 horizon)\n\u2022 Japan Ministry of Health, Labour and Welfare \u2014 Vital Statistics; National Institute of Population and Social Security Research (IPSS)\n\u2022 ISTAT (Italy) \u2014 Natality and fertility indicators, 2024 provisional release\n\u2022 National Bureau of Statistics of China \u2014 annual births and population releases, 2016\u20132024\n\u2022 CDC / National Center for Health Statistics \u2014 U.S. Births: Provisional Data\n\u2022 UN World Population Prospects; World Bank Open Data \u2014 cross-country fertility comparisons\n\nMethodology note: the generational collapse model is deliberately simplified. Dividing the total fertility rate by 2 yields a per-couple generational multiplier (0.72 \u00f7 2 = 0.36 per person, or 0.36 \u00d7 2.1 \u2248 0.76 relative to replacement), then compounding it forward across three ~30-year generations. It holds fertility constant and excludes immigration, mortality change, and generational timing shifts \u2014 so it is not a forecast of Korea's actual future population. It is a demonstration of what a sub-replacement rate does when compounded, which is exactly the intuition most people lack. Projected figures come from official medium-variant scenarios; all rates are as published at time of production and may be revised.\n\nThis video takes no position on causes. The chart doesn't blame housing, working hours, gender politics, or immigration policy \u2014 it only shows what the numbers do.\n\n\u25b6\ufe0f If you want more data documentaries that respect your intelligence, subscribe. One deep dive into the numbers that actually shape the next century, every week.\n\n\ud83d\udcac Which country's line surprised you most? Drop it in the comments.",
+  "tags": [
+    "south korea birth rate",
+    "south korea population collapse",
+    "fertility rate explained",
+    "demographic collapse",
+    "0.72 fertility rate",
+    "replacement rate 2.1",
+    "population pyramid inverted",
+    "japan population decline",
+    "china birth rate decline",
+    "italy fertility rate record low",
+    "us fertility rate record low",
+    "korea population 2072 projection",
+    "worker to retiree ratio",
+    "aging population crisis",
+    "data visualization documentary"
+  ],
+  "category_id": "28"
+}
