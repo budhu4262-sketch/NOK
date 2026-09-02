@@ -42,3 +42,20 @@ def validate_environment() -> bool:
     print(f" - Client Secrets: {'Available' if has_secrets else 'Missing'}")
 
     return True
+
+def validate_environment() -> bool:
+    """Checks for required API keys without crashing the runner."""
+    print("[Config] Checking environment keys...")
+    tabi_key = get_tabi_api_key()
+    gemini_key = get_gemini_api_key()
+    token_exists = Path("token.json").exists()
+    secrets_exists = Path("client_secrets.json").exists()
+
+    if not tabi_key and not gemini_key:
+        print("[Warning] Neither TABI_API_KEY nor GEMINI_API_KEY is defined. Falling back to defaults.")
+    else:
+        print(" -> LLM API Keys: OK")
+
+    print(f" -> YouTube Token: {'OK' if token_exists else 'Missing'}")
+    print(f" -> Client Secrets: {'OK' if secrets_exists else 'Missing'}")
+    return True
