@@ -419,6 +419,9 @@ def main():
         action="store_true",
         help="Bypass the daily 2-video quota limit",
     )
+
+    parser.add_argument("--auto-confirm", action="store_true", help="Auto confirm all stages")
+    
     parser.add_argument(
         "--dry-run",
         action="store_true",
