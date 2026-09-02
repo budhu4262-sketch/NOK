@@ -47,7 +47,7 @@ jobs:
 
       - name: Run Full Production Pipeline
         run: |
-          python orchestrator.py --full --auto-confirm
+         python orchestrator.py --full --force
 
       - name: Upload Workspace Artifacts (Debug & Backups)
         if: always()
